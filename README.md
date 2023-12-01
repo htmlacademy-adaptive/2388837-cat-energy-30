@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Тигран Гулян](https://vk.com/nasvyazi_tg).
-* Наставник: [Евгенаия Подопригор](https://htmlacademy.ru/profile/id2387199).
+* Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
 
 ---
 
