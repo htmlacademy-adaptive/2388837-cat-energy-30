@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,10 +7,10 @@
   <title>Document</title>
 </head>
 
-<body>
-  <header class="header">
-    <div class="header__logo-wraper">
-      <a class="header__logo-link">
+<body class="body">
+  <div class="body__container">
+    <header class="header">
+      <a class="header__logo-link" aria-label="Ссылка на логотип">
         <svg class="header__logo-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="59" fill="none">
           <path fill="#FDC305"
             d="M59.743 23.806A25.423 25.423 0 0 0 51.71 13.43a25.632 25.632 0 0 0-12.165-5.02 25.688 25.688 0 0 0-13.062 1.671 25.536 25.536 0 0 0-10.491 7.916 25.327 25.327 0 0 0-5.132 12.06 25.267 25.267 0 0 0 1.59 12.997 25.417 25.417 0 0 0 7.892 10.484 25.629 25.629 0 0 0 12.094 5.184 113.224 113.224 0 0 1-1.686-6.794c1.509.973 3.098 1.819 4.749 2.529 0 0 .12 2.142.28 4.533 1.783.03 3.566-.126 5.317-.466a2.108 2.108 0 0 1 0-.754c.29-1.855 1.088-5.198 1.247-7.35a15.108 15.108 0 0 0 2.894-3.68l-.06.436c-.549 4.226-1.696 8.74-2.395 9.989a5.534 5.534 0 0 1-.828 1.14 25.646 25.646 0 0 0 9.918-4.727 25.467 25.467 0 0 0 7.004-8.43 25.303 25.303 0 0 0 .867-21.341Zm-1.466 3.76c-.44.426-1.347.714-1.497-.576-.15-1.29-.19-2.192-.19-2.192s-1.925-3.402-2.643-3.442c-.719-.04-5.817 3.442-7.164 4.96-1.167 1.28-1.397 1.19-1.397 3.442 0 1.696.22 8.104.1 13.004l-8.131 2.153a64.188 64.188 0 0 1-7.783 1.706l-.997-5.783h-.14l-2.564-13.064s-3.801-1.428-5.198-1.815a3.772 3.772 0 0 0-3.991.625 5.005 5.005 0 0 0-1.726 3.819c.21.46.371.943.479 1.438.05.476-1.197.426-1.996.426-.798 0-.918-1.428-.289-3.104a22.571 22.571 0 0 1 1.816-3.71 11.776 11.776 0 0 1 2.065-2.867s.14-.337 1.247-.238c1.108.1 7.264.427 7.264.427l.05-2.252a143.265 143.265 0 0 1 20.193-1.33v1.816a22.576 22.576 0 0 1 8.122-1.984.912.912 0 0 1 .768.387c.34.427 2.405 2.976 2.644 3.343.67.953 1.28 1.947 1.826 2.976a6.174 6.174 0 0 1-.868 1.825v.01Z" />
@@ -50,8 +50,44 @@
           <li class="header__item-menu">Каталог продукции</li>
           <li class="header__item-menu">подбор программы</li>
         </ul>
+        <button class="header_hambergers" type="button" aria-label="Пукта меню навигации"></button>
       </nav>
-    </div>
-  </header>
+    </header>
+    <main class="main-index">
+      <section class="functional-cat">
+        <h1 class="functional-cat__title title">Функциональное<br>питание для котов</h1>
+        <p class="functional-cat__description-form-cat">Занялся собой? Займись котом!</p>
+        <a class="functional-cat__link-program button-stock" href="#">Подобрать программу</a>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title vissial-hiden">Список преимуществ Cat Energy</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__product-title advantages-product-title">похудение</h3>
+            <p class="advantages__product-description stock-description">
+              Ваш кот весит больше собаки и почти утратил способность<br>
+              лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
+              вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="advantages__catalog-link" href="#">
+              каталог slim
+            </a>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__product-title advantages-product-title">набор массы</h3>
+            <p class="advantages__product-description stock-description">
+              Заработать авторитет среди дворовых котов и даже собак?<br>
+              Серия Cat Energy Pro поможет вашему коту нарастить<br>
+              необходимые мышцы!
+            </p>
+            <a class="advantages__catalog-link" href="#">
+              каталог slim
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>
