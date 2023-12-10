@@ -51,12 +51,12 @@
             </a>
           </li>
           <li class="header__item-menu header__item-menu-active">
-            <a class="header__item-menu">
+            <a class="header__item-menu" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="header__item-menu header__item-menu-active">
-            <a class="header__item-menu" href="form.html">
+            <a class="header__item-menu">
               подбор программы
             </a>
           </li>
@@ -65,118 +65,133 @@
       </nav>
     </header>
     <main class="main-form">
-      <form class="main-form__form form-page" action="https://echo.htmlacademy.ru/" method="post">
-        <section class="form-page__program-section program-section">
-          <h1 class="program-section__title title">
-            Подбор программы
-          </h1>
-          <p class="program-section__description">
-            Заполните анкету, и мы подберем<br>
-            программу питания для вашего кота
-          </p>
-          <fieldset class="program-section__form-wrapper">
-            <legend class="program-section__name-title form-fieldset-title">
-              <label class="program-section__name-lable form-fieldset-label" for="nameCat">ИМЯ:*</label></legend>
-            <input class="program-section__name-input form-fieldset-input" type="text" name="Name cat:" id="nameCat"
-              placeholder="барсик" required>
-          </fieldset>
-          <fieldset class="program-section__form-wrapper">
-            <legend class="program-section__weight-title-legend form-fieldset-title-legend">
-              <label class="program-section__weight-lable form-fieldset-label" for="weight">Вес (кг):*</label>
+      <section class="form-programm">
+        <h1 class="form-programm__title title-form-catalog">
+          Подбор программы
+        </h1>
+        <p class="form-programm__survey-text">
+          Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота
+        </p>
+        <form class="form-programm__container" method="post" action="https://echo.htmlacademy.ru/">
+          <fieldset class="form-programm__wrapper">
+            <legend class="form-programm__name-title">
+              <label class="form-programm__lable-title" for="Name:">ИМЯ:*</label>
             </legend>
-            <input class="program-section__weight-input form-fieldset-input" type="number" name="Weight:" id="weight"
-              placeholder="7" required>
+            <input class="form-programm__input-meaning" type="text" placeholder="Барсик" id="Name:" name="Name:"
+              required>
           </fieldset>
-          <fieldset class="program-section__form-wrapper">
-            <legend class="program-section__yers-title-legend form-fieldset-title-legend">
-              <label class="program-section__yers-lable form-fieldset-label" for="yers">Возраст (лет):</label>
+          <fieldset class="form-programm__wrapper">
+            <legend class="form-programm__name-title">
+              <label class="form-programm__lable-title" for="Weight">Вес (кг):*</label>
             </legend>
-            <input class="program-section__yers-input form-fieldset-input" type="number" name="Yers:" id="yers"
-              placeholder="7" required>
+            <input class="form-programm__input-meaning" type="number" placeholder="7" id="weight" name="weight:"
+              required>
           </fieldset>
-          <div class="program-section__checkbox-container">
-            <fieldset class="program-section__form-checkbox-wrapper">
-              <legend class="program-section__weightLoss-title-legend form-fieldset-title-legend">
-                <label class="program-section__weightLoss-lable form-fieldset-label"
-                  for="weightLoss">похудение</label></legend>
-              <input class="program-section__weightLoss-input program-section__weightLoss-input__active form-fieldset-input"
-                type="radio" name="Type:" id="weightLoss" checked>
-            </fieldset>
-            <fieldset class="program-section__form-checkbox-wrapper">
-              <legend class="program-section__weightGain-title-legend form-fieldset-title-legend">
-                <label class="program-section__weightGain-lable form-fieldset-label" for="weightGain">
-                  Набор массы</label>
-                </legend>
-              <input
-                class="program-section__weightGain-input program-section__weightGain-input__active form-fieldset-input"
-                type="radio" name="Type:" id="weightGain">
-            </fieldset>
-            <fieldset class="program-section__form-checkbox-wrapper">
-              <legend class="program-section__dontKnow-title-legend form-fieldset-title-legend">
-                <label class="program-section__dontKnow-lable form-fieldset-label" for="dontKnow">
-                  Не знаю (Нужен ваш совет)
-                </label>
+          <fieldset class="form-programm__wrapper">
+            <legend class="form-programm__name-title">
+              <label for="Yers">Возраст (лет):</label>
+            </legend>
+            <input class="form-programm__input-meaning" type="number" placeholder="7" id="yers" name="yers:" required>
+          </fieldset>
+          <div class="form-programm__container-checkbox">
+            <fieldset class="form-programm__wrapper">
+              <legend class="form-programm__name-title">
+                <label class="form-programm__lable-title" for="weight-loss">похудение</label>
               </legend>
-              <input
-                class="program-section__dontKnow-input program-section__dontKnow-input__active form-fieldset-input"
-                type="radio" name="Type:" id="dontKnow">
+              <input class="form-programm__input-checkbox form-programm__input-checkbox__active" type="radio"
+                name="Choice:" id="weight-loss" checked>
+            </fieldset>
+            <fieldset class="form-programm__wrapper">
+              <legend class="form-programm__name-title">
+                <label class="form-programm__lable-title" for="weight-gain">Набор массы</label>
+              </legend>
+              <input class="form-programm__input-checkbox" type="radio" name="Choice:" id="weight-gain">
+            </fieldset>
+            <fieldset class="form-programm__wrapper">
+              <legend class="form-programm__name-title">
+                <label class="form-programm__lable-title" for="advice">Не знаю (Нужен ваш совет)</label>
+              </legend>
+              <input class="form-programm__input-checkbox" type="radio" name="Choice:"  id="advice" >
             </fieldset>
           </div>
-        </section>
-        <section class="form-page__client-contacts-sectionю client-contacts-section">
-          <h2 class="client-contacts-section__title form-section-title">
-            Контактные данные (владельца кота)
-          </h2>
-        <fieldset class="client-contacts-section__form-wrapper">
-            <legend class="client-contacts-section__email-title-legend form-fieldset-title-legend">
-              <label class="client-contacts-section__email-lable form-fieldset-label" for="email">E-mail:* </label></legend>
-            <input class="client-contacts-section__email-input form-fieldset-input" type="email" name="Emai:" id="email"
-              placeholder="kuklachev@gmail.com" required>
           </fieldset>
-          <fieldset class="client-contacts-section__form-wrapper">
-            <legend class="client-contacts-section__phone-title-legend form-fieldset-title-legend">
-              <label class="client-contacts-section__phone-lable form-fieldset-label" for="phone">Телефон:*</label></legend>
-            <input class="client-contacts-section__phone-input form-fieldset-input" type="tel" name="Phone:" id="phone"
-              placeholder="kuklachev@gmail.com" required>
+      </section>
+      <section class="contact-details">
+        <h2 class="contact-details__title title-form-catalog">
+          Контактные данные (владельца кота)
+        </h2>
+        <div class="contact-details__container">
+          <fieldset class="contact-details__wrapper">
+            <legend class="contact-details__name-title">
+              <label class="contact-details__lable-title" for="email">E-mail:*</label>
+            </legend>
+            <input class="contact-details__input" type="email" placeholder="kuklachev@gmail.com" id="email" name="Email"
+              required>
           </fieldset>
-        </section>
-        <section class="main-form__form__comments-section comments-section">
-          <h2 class="comments-section__title form-section-title">
-            Контактные данные (владельца кота)
-          </h2>
-          <label class="comments-section__lable form-fieldset-label" for="commets"></label>
-          <textarea class="comments-section__textarea" name="Commets client:" id="commets" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </section>
-
-
-        <section class="form-page__additionally-sectionю additionally-sectionю">
-          <h2 class="additionally-sectionю__title form-section-title">
-            Дополнительно
-          </h2>
-        <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__sweetener-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__sweetener-lable form-fieldset-label" for="sweetener">Cахарозаменитель</label></legend>
-            <input class="additionally-sectionю__sweetener-input form-fieldset-input" type="checkbox" name="Sweetener:" id="sweetener"
-              placeholder="kuklachev@gmail.com" checked>
+          <fieldset class="contact-details__wrapper">
+            <legend class="contact-details__name-title">
+              <label class="contact-details__lable-title" for="phone">Телефон:*</label>
+            </legend>
+            <input class="contact-details__input" type="tel" placeholder="8 (960) 900-60-90" id="phone" name="Phone"
+              required>
           </fieldset>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__milk-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__milk-lable form-fieldset-label" for="milk">Mолоко</label></legend>
-            <input class="additionally-sectionю__milk-input form-fieldset-input" type="checkbox" name="Milk:" id="milk">
-          </fieldset>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__vitamins-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__vitamins-lable form-fieldset-label" for="vitamins">Витамины</label></legend>
-            <input class="additionally-sectionю__vitamins-input form-fieldset-input" type="checkbox" name="Vitamins:" id="vitamins">
-          </fieldset>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__water-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__water-lable form-fieldset-label" for="water">Питьевая вода</label></legend>
-            <input class="additionally-sectionю__water-input form-fieldset-input" type="checkbox" name="Water:" id="water">
-          </fieldset>
-          <button class="additionally-sectionю__button button-stock" type="submit">отправить заявку</button>
-        </section>
+        </div>
+      </section>
+      <section class="section-comments">
+        <h2 class="section-comments__title title-form-catalog">
+          Комментарий
+        </h2>
+        <lable class="section-comments__lable" for="leash"></lable>
+        <textarea calss="section-comments__textarea" placeholder="Расскажите обо всех повадках кота" id="leash"
+          name="leash" required></textarea>
+      </section>
+      <section class="additional-parameters">
+        <h2 class="additional-parameters__title title-form-catalog">
+          Дополнительно
+        </h2>
+        <fieldset class="additonial-parameters__wrapper">
+          <legend class="additonial-parameters__name-title">
+            <label class="additonial-parameters__lable" for="details">сахарозаменитель</label>
+          </legend>
+          <input class="additonial-parameters__input additonial-parameters__input__active" type="checkbox" id="details"
+            name="details" checked>
+        </fieldset>
+        <fieldset class="additonial-parameters__wrapper">
+          <legend class="additonial-parameters__name-title">
+            <label class="additonial-parameters__lable" for="water">питьевая вода</label>
+          </legend>
+          <input class="additonial-parameters__input additonial-parameters__input__active" type="checkbox" id="water" name="Water">
+        </fieldset>
+        <fieldset class="additonial-parameters__wrapper">
+          <legend class="additonial-parameters__name-title">
+            <label class="additonial-parameters__lable" for="milk">молоко</label>
+          </legend>
+          <input class="additonial-parameters__input additonial-parameters__input__active" type="checkbox" id="milk" name="Milk">
+        </fieldset>
+        <fieldset class="additonial-parameters__wrapper">
+          <legend class="additonial-parameters__name-title">
+            <label class="additonial-parameters__lable" for="vitamins">витамины</label>
+          </legend>
+          <input class="additonial-parameters__input additonial-parameters__input__active" type="checkbox" id="vitamins"
+            name="Vitamins">
+        </fieldset>
+      </section>
+      <button class="form-programm__button-submit button-stock" type="submit">отправить заявку</button>
       </form>
+      <section class="welcome-work-diller">
+        <h2 class="welcome-work-diller__title title-stock">Сотрудничество с нами</h2>
+        <p class="welcome-work-diller__description">
+          приглашаем<br>
+          к сотрудничеству<br>
+          дилеров!
+        </p>
+        <address class="welcome-work-diller__map-container">
+          <p class="welcome-work-diller__text-adress">ул. Большая<br>
+            Конюшенная, д. 19/8
+          </p>
+          <p class="welcome-work-diller__text-adress">Санкт-Петербург</p>
+        </address>
     </main>
     <footer class="footer">
       <div class="logo-box">
