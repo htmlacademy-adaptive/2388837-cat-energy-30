@@ -11,17 +11,17 @@
   <div class="body__container">
     <header class="header">
       <a class="header__logo-link" aria-label="Ссылка на логотип" href="index.html">
-        <img src="#" alt="логотип cat energy" width="202" height="59">
+        <img class="header__logo-image" src="#" alt="логотип cat energy" width="202" height="59">
       </a>
       <nav class="header__navigation">
         <ul class="header__list-menu">
-          <li class="header__item-menu header__item-menu-active">
+          <li class="header__item-menu">
             <a class="header__item-menu" href="index.html">Главная</a>
           </li>
-          <li class="header__item-menu header__item-menu-active">
-            <a class="header__item-menu" href="catalog.html">Каталог продукции</a>
+          <li class="header__item-menu">
+            <a class="header__item-menu header__item-menu-active" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header__item-menu header__item-menu-active">
+          <li class="header__item-menu">
             <a class="header__item-menu" href="form.html">подбор программы</a>
           </li>
         </ul>
@@ -36,7 +36,7 @@
             <a class="price-catalog__link-card" href="#">
               <img class="price-catalog__image-card" src="#" alt="Cat Energy PRO 500 г" width="161" height="172">
               <p class="price-catalog__name-card">cat energy pro 500 г</p>
-              <dl class="price-catalog__product-description ">
+              <dl class="price-catalog__product-wrapper ">
                 <dt class="price-catalog__weight-title product-title-stock">Масса</dt>
                 <dd class="price-catalog__weight-description">500г</dd>
                 <dt class="price-catalog__weight-title product-title-stock">Вкус</dt>
@@ -51,7 +51,7 @@
             <a class="price-catalog__link-card" href="#">
               <img class="price-catalog__image-card" src="#" alt="Cat Energy PRO 1000 г" width="161" height="172">
               <p class="price-catalog__name-card">cat energy pro 1000 г</p>
-              <dl class="price-catalog__product-description ">
+              <dl class="price-catalog__product-wrapper ">
                 <dt class="price-catalog__weight-title product-title-stock">Масса</dt>
                 <dd class="price-catalog__weight-description">1000г</dd>
                 <dt class="price-catalog__weight-title product-title-stock">Вкус</dt>
@@ -66,7 +66,7 @@
             <a class="price-catalog__link-card" href="#">
               <img class="price-catalog__image-card" src="#" alt="Cat Energy PRO 500 г" width="161" height="172">
               <p class="price-catalog__name-card">cat energy slim 500 г</p>
-              <dl class="price-catalog__product-description ">
+              <dl class="price-catalog__product-wrapper ">
                 <dt class="price-catalog__weight-title product-title-stock">Масса</dt>
                 <dd class="price-catalog__weight-description">500г</dd>
                 <dt class="price-catalog__weight-title product-title-stock">Вкус</dt>
@@ -81,7 +81,7 @@
             <a class="price-catalog__link-card" href="#">
               <img class="price-catalog__image-card" src="#" alt="Cat Energy PRO 1000 г" width="161" height="172">
               <p class="price-catalog__name-card">cat energy slim 1000 г</p>
-              <dl class="price-catalog__product-description ">
+              <dl class="price-catalog__product-wrapper">
                 <dt class="price-catalog__weight-title product-title-stock">Масса</dt>
                 <dd class="price-catalog__weight-description">500г</dd>
                 <dt class="price-catalog__weight-title product-title-stock">Вкус</dt>
@@ -96,7 +96,7 @@
             <a class="price-catalog__link-card" href="#">
               <img class="price-catalog__image-card" src="#" alt="Cat Energy slim 500 г" width="161" height="172">
               <p class="price-catalog__name-card">cat energy slim 500 г</p>
-              <dl class="price-catalog__product-description ">
+              <dl class="price-catalog__product-wrapper">
                 <dt class="price-catalog__weight-title product-title-stock">Масса</dt>
                 <dd class="price-catalog__weight-description">500г</dd>
                 <dt class="price-catalog__weight-title product-title-stock">Вкус</dt>
@@ -150,15 +150,15 @@
           </li>
         </ul>
       </section>
-      <section class="Order-souvenir">
-        <h2 class="Order-souvenir__title title-stock">Подарочки от нас</h2>
-        <p class="Order-souvenir__text">Закажите все<br>и получите чехол для<br>кота в подарок!<br>
+      <section class="order-souvenir">
+        <h2 class="order-souvenir__title title-stock">Подарочки от нас</h2>
+        <p class="order-souvenir__text">Закажите все<br>и получите чехол для<br>кота в подарок!<br>
         </p>
       </section>
       <section class="welcome-work-diller">
         <h2 class="welcome-work-diller__title title-stock">Сотрудничество с нами</h2>
         <p class="welcome-work-diller__description">приглашаем<br>к сотрудничеству<br>дилеров!</p>
-        <address class="welcome-work-diller__container">
+        <address class="welcome-work-diller__wrapper">
           <p class="welcome-work-diller__text-adress">ул. Большая<br>Конюшенная, д. 19/8</p>
           <p class="welcome-work-diller__text-adress">Санкт-Петербург</p>
         </address>
@@ -166,7 +166,7 @@
     </main>
     <footer class="footer">
       <div class="logo-box">
-        <svg class="logo-box__logo-image-text" width="118" height="21" fill="none">
+        <svg  class="logo-box__logo-image-text" width="118" height="21" fill="none">
           <path fill="#111"
             d="M1.424 19.216a7.92 7.92 0 0 1-1.403-5.06V6.844a8.041 8.041 0 0 1 1.382-5.109C2.332.572 3.918-.006 6.163 0c2.244.007 3.764.517 4.559 1.53a6.428 6.428 0 0 1 1.333 4.378v1.716H7.906V5.762a9.494 9.494 0 0 0-.13-1.463 1.622 1.622 0 0 0-.47-.926 1.576 1.576 0 0 0-1.153-.36 1.499 1.499 0 0 0-.87.134c-.27.131-.49.34-.633.597a5.202 5.202 0 0 0-.34 2.145v9.28a4.55 4.55 0 0 0 .39 2.146c.145.243.36.44.617.567.258.126.549.176.836.144.282.04.57-.01.821-.14.252-.129.456-.332.582-.581.242-.686.347-1.41.31-2.135v-1.95h4.149v1.687a6.925 6.925 0 0 1-1.233 4.494C9.9 20.474 8.377 21 6.213 21s-3.858-.585-4.79-1.784ZM17.706.283h4.75l4.008 20.473h-3.948l-.711-4.523h-3.327l-.802 4.494H13.67L17.706.283Zm3.658 13.376L20.1 5.43 18.85 13.66h2.515ZM29.54 3.364h-3.246V.283h10.741v3.08H33.83v17.364H29.53l.01-17.363Z" />
           <path fill="#444"
