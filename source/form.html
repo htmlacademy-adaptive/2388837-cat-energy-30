@@ -30,116 +30,114 @@
     </header>
     <main class="main-form">
       <form class="main-form__form form-page" action="https://echo.htmlacademy.ru/" method="post">
-        <!-- <section class="form-page__program-section program-section">
-          <h1 class="program-section__title title">Подбор программы
-          </h1>
-          <p class="program-section__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота
-          </p>
-          <fieldset class="program-section__form-wrapper">
-            <legend class="program-section__name-title form-fieldset-title">
-              <label class="program-section__name-lable form-fieldset-label" for="name-cat">ИМЯ:*</label>
-            </legend>
-            <input class="program-section__name-input form-fieldset-input" type="text" name="Name cat:" id="name-cat"
-              placeholder="барсик" required>
-          </fieldset>
-          <fieldset class="program-section__form-wrapper">
-            <legend class="program-section__weight-title-legend form-fieldset-title-legend">
-              <label class="program-section__weight-lable form-fieldset-label" for="weight">Вес (кг):*</label>
-            </legend>
-            <input class="program-section__weight-input form-fieldset-input" type="number" name="Weight:" id="weight"
-              placeholder="7" required>
-          </fieldset>
-          <fieldset class="program-section__form-wrapper">
-            <legend class="program-section__yers-title-legend form-fieldset-title-legend">
-              <label class="program-section__yers-lable form-fieldset-label" for="yers">Возраст (лет):</label>
-            </legend>
-            <input class="program-section__yers-input form-fieldset-input" type="number" name="Yers:" id="yers"
-              placeholder="7" required>
-          </fieldset>
-          <div class="program-section__checkbox-container">
-            <fieldset class="program-section__form-checkbox-wrapper">
-              <legend class="program-section__weightLoss-title-legend form-fieldset-title-legend">
-                <label class="program-section__weightLoss-lable form-fieldset-label" for="weight-loss">похудение</label>
+        <section class="form-page__programs programs">
+          <h1 class="programs__title title">Подбор программы</h1>
+          <p class="programs__program-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="programs__container-input">
+            <fieldset class="programs__fieldset-wrapper">
+              <legend class="programs__legend">
+                <label class="programs__lable" for="name-user">ИМЯ:*</label>
               </legend>
-              <input
-                class="program-section__weightLoss-input program-section__weightLoss-input__active form-fieldset-input"
-                type="radio" name="Type:" id="weight-loss" checked>
+              <input class="programs__input" id="name-user" name="Name-user:" type="text" placeholder="Барсик" required>
             </fieldset>
-            <fieldset class="program-section__form-checkbox-wrapper">
-              <legend class="program-section__weightGain-title-legend form-fieldset-title-legend">
-                <label class="program-section__weightGain-lable form-fieldset-label" for="weight-gain">Набор
-                  массы</label>
+            <fieldset class="programs__fieldset-wrapper">
+              <legend class="programs__legend">
+                <label class="programs__lable" for="weight">Вес (кг):*</label>
               </legend>
-              <input
-                class="program-section__weightGain-input program-section__weightGain-input__active form-fieldset-input"
-                type="radio" name="Type:" id="weight-gain">
+              <input class="programs__input" id="weight" name="Weight:" type="number" placeholder="7" required>
             </fieldset>
-            <fieldset class="program-section__form-checkbox-wrapper">
-              <legend class="program-section__dontKnow-title-legend form-fieldset-title-legend">
-                <label class="program-section__dontKnow-lable form-fieldset-label" for="dont-know">Не знаю (Нужен ваш
-                  совет)</label>
+            <fieldset class="programs__fieldset-wrapper">
+              <legend class="programs__legend">
+                <label class="programs__lable" for="yers">Возраст (лет):</label>
               </legend>
-              <input class="program-section__dontKnow-input program-section__dontKnow-input__active form-fieldset-input"
-                type="radio" name="Type:" id="dont-know">
+              <input class="programs__input" id="yers" name="Yers:" type="number" placeholder="7" required>
             </fieldset>
           </div>
-        </section> -->
-        <section class="form-page__client-contacts-sectionю client-contacts-section">
-          <h2 class="client-contacts-section__title form-section-title">Контактные данные (владельца кота)</h2>
-          <fieldset class="client-contacts-section__form-wrapper">
-            <legend class="client-contacts-section__email-title-legend form-fieldset-title-legend">
-              <label class="client-contacts-section__email-lable form-fieldset-label" for="email">E-mail:*</label>
-            </legend>
-            <input class="client-contacts-section__email-input form-fieldset-input" type="email" name="Emai:" id="email"
-              placeholder="kuklachev@gmail.com" required>
-          </fieldset>
-          <fieldset class="client-contacts-section__form-wrapper">
-            <legend class="client-contacts-section__phone-title-legend form-fieldset-title-legend">
-              <label class="client-contacts-section__phone-lable form-fieldset-label" for="phone">Телефон:*</label>
-            </legend>
-            <input class="client-contacts-section__phone-input form-fieldset-input" type="tel" name="Phone:" id="phone"
-              placeholder="kuklachev@gmail.com" required>
-          </fieldset>
+            <div class="programs__container-input-radio">
+              <fieldset class="programs__fieldset-wrapper">
+                <legend class="programs__legend">
+                  <label class="programs__lable" for="weight-loss">похудение</label>
+                </legend>
+                <input class="programs__input-radio" id="weight-loss" name="Weight" type="radio" value="weight-loss" checked>
+              </fieldset>
+              <fieldset class="programs__fieldset-wrapper">
+                <legend class="programs__legend">
+                  <label class="programs__lable" for="mass-gain">Набор массы</label>
+                </legend>
+                <input class="programs__input-radio" id="mass-gain" name="Weight" type="radio" value="mass-gain">
+              </fieldset>
+              <fieldset class="programs__fieldset-wrapper">
+                <legend class="programs__legend">
+                  <label class="programs__lable" for="no-know">Не знаю (Нужен ваш совет)</label>
+                </legend>
+                <input class="programs__input-radio" id="no-know" name="Weight" type="radio" value="user no know">
+              </fieldset>
+              </div>
         </section>
-        <section class="main-form__form__comments-section comments-section">
-          <h2 class="comments-section__title form-section-title">Контактные данные (владельца кота)</h2>
-          <label class="comments-section__lable form-fieldset-label" for="commets"></label>
-          <textarea class="comments-section__textarea" name="Commets-client:" id="commets" cols="30" rows="10"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+        <section class="form-page__contact-information contact-information">
+          <h2 class="contact-information__title">Контактные данные (владельца кота)</h2>
+          <div class="contact-information__container-input">
+            <fieldset class="contact-information__fieldset-wrapper">
+              <legend class="contact-information__legend">
+                <label class="contact-information__lable" for="email">E-mail:*</label>
+              </legend>
+              <input class="contact-information__input" id="email" name="Email-user:" type="email" placeholder="kuklachev@gmail.com" required>
+            </fieldset>
+            <fieldset class="contact-information__fieldset-wrapper">
+              <legend class="contact-information__legend">
+                <label class="contact-information__lable" for="phone">Телефон:*</label>
+              </legend>
+              <input class="contact-information__input" id="phone" name="Phone-user:" type="tell" placeholder="8 (960) 900-60-90" required>
+            </fieldset>
+          </div>
         </section>
-        <section class="form-page__additionally-sectionю additionally-sectionю">
-          <h2 class="additionally-sectionю__title form-section-title">Дополнительно</h2>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__sweetener-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__sweetener-lable form-fieldset-label"
-                for="sweetener">Cахарозаменитель</label>
+        <section class="form-page__comments commets">
+          <h2 class="commets__title">Комментарий</h2>
+          <label class="commets__lable" for="commets"></label>
+          <textarea class="commets__text-area" id="commets" name="Commets" placeholder="Расскажите обо всех повадках кота" cols="30" rows="10" required></textarea>
+        </section>
+        <section class="form-page__additionally additionally">
+          <div class="additionally__container">
+            <h2 class="additionally__title">Дополнительно</h2>
+          <fieldset class="additionally__fieldset-wrapper">
+            <legend class="additionally__legend">
+              <label class="additionally__label" for="sweetener">сахарозаменитель</label>
             </legend>
-            <input class="additionally-sectionю__sweetener-input form-fieldset-input" type="checkbox" name="Sweetener:"
-              id="sweetener" checked>
+            <input class="additionally__input" id="sweetener" name="Sweetener:" type="checkbox" checked>
           </fieldset>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__milk-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__milk-lable form-fieldset-label" for="milk">Mолоко</label>
+          <fieldset class="additionally__fieldset-wrapper">
+            <legend class="additionally__legend">
+              <label class="additionally__label" for="water">питьевая вода</label>
             </legend>
-            <input class="additionally-sectionю__milk-input form-fieldset-input" type="checkbox" name="Milk:" id="milk">
+            <input class="additionally__input" id="water" name="Water:" type="checkbox">
           </fieldset>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__vitamins-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__vitamins-lable form-fieldset-label" for="vitamins">Витамины</label>
+          <fieldset class="additionally__fieldset-wrapper">
+            <legend class="additionally__legend">
+              <label class="additionally__label" for="milk">молоко</label>
             </legend>
-            <input class="additionally-sectionю__vitamins-input form-fieldset-input" type="checkbox" name="Vitamins:"
-              id="vitamins">
+            <input class="additionally__input" id="milk" name="Milk:" type="checkbox">
           </fieldset>
-          <fieldset class="additionally-sectionю__form-wrapper">
-            <legend class="additionally-sectionю__water-title-legend form-fieldset-title-legend">
-              <label class="additionally-sectionю__water-lable form-fieldset-label" for="water">Питьевая вода</label>
+          <fieldset class="additionally__fieldset-wrapper">
+            <legend class="additionally__legend">
+              <label class="additionally__label" for="vitamins">витамины</label>
             </legend>
-            <input class="additionally-sectionю__water-input form-fieldset-input" type="checkbox" name="Water:"
-              id="water">
+            <input class="additionally__input" id="vitamins" name="Vitamins:" type="checkbox">
           </fieldset>
-          <button class="additionally-sectionю__button button-stock" type="submit">отправить заявку</button>
+          </div>
+          <button class="form-page__button-submit button-stock" type="submit">отправить заявку</button>
         </section>
       </form>
+      <section class="gps-map">
+        <h2 class="gps-map__title vissial-hiden title-stock">Наш магазин на карте</h2>
+        <img class="gps-map__image" src="#" alt="Карта" width="1400" height="400">
+        <div class="gps-map__container">
+          <h3 class="gps-map__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+          <div class="gps-map__wrapper-description">
+            <p class="gps-map__description">ул. Большая<br>Конюшенная, д. 19/8</p>
+            <p class="gps-map__description">Санкт-Петербург</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="logo-box">
