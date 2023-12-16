@@ -11,7 +11,17 @@
   <div class="page__container">
     <header class="header">
       <a class="header__logo-link logo" aria-label="Ссылка на логотип" href="index.html">
-        <img class="logo__image logo__image--icon" src="#" alt="иконка cat energy" width="60" height="50">
+        <picture>
+          <source media="(min-width:1200px)" srcset="../raw/images/logo/logo-iconCat-desktop.svg" type="image/svg+xml">
+          <source media="(min-width:768px)" srcset="../raw/images/logo/logo-iconCat-tablet.svg" type="image/svg+xml">
+          <img class="header__logo-icon" src="../raw/images/logo/logo-iconCat-phone.svg" alt="Иконка логотипа Кат энержи" width="33" height="38">
+        </picture>
+
+        <picture>
+          <source media="min-width:1200px" srcset="../raw/images/logo/logo-textCat-desktop.svg" type="image/svg+xml">
+          <source media="min-width:768px" srcset="../raw/images/logo/logo-textCat-tablet.svg" type="image/svg+xml">
+          <img class="header__logo-text" src="../raw/images/logo/logo-textCat-phone.svg" alt="Текст логотипа Кат энержи" width="101" height="18">
+        </picture>
       </a>
       <nav class="header__navigation navigation">
 
@@ -115,8 +125,8 @@
             </div>
 
           <div class="live-example__container-image-cats">
-            <img class="live-example__cat" src="#" alt="Куки до применения cat energy" width="560" height="512">
-            <img class="live-example__cat" src="#" alt="Куки после применения cat energy" width="560" height="512">
+            <img class="live-example__cat" src="#" alt="Куки до применения cat energy" width="280" height="256">
+            <img class="live-example__cat" src="#" alt="Куки после применения cat energy" width="280" height="256">
           </div>
 
         </div>
@@ -124,7 +134,7 @@
 
       <section class="gps-map">
         <h2 class="visually-hidden">Наш магазин на карте</h2>
-        <img class="gps-map__image" src="#" alt="Карта" width="1400" height="400">
+        <img class="gps-map__image" src="#" alt="Карта" width="320" height="362">
 
         <div class="gps-map__container work-section">
           <h3 class="work-section__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
@@ -139,7 +149,10 @@
 
     <footer class="footer">
         <a class="logo" aria-label="Ссылка на логотип" href="index.html">
-          <img class="logo__image-text" src="#" alt="текст cat energy" width="101" height="18">
+          <picture>
+            <source media="">
+          <img class="logo__image-text" src="#" alt="текст cat energy" width="128" height="24">
+          </picture>
         </a>
 
       <ul class="footer__social-list box-social">

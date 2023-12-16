@@ -11,8 +11,17 @@
   <div class="body__container">
     <header class="header">
       <a class="header__logo-link logo" aria-label="Ссылка на логотип" href="index.html">
-        <img class="logo__image logo__image--icon" src="#" alt="иконка cat energy" width="60" height="50">
-        <img class="logo__image logo__image-text" src="#" alt="текст cat energy" width="101" height="18">
+        <picture>
+          <source media="(min-width:1200px)" srcset="../raw/images/logo/logo-iconCat-desktop.svg" type="image/svg+xml">
+          <source media="(min-width:768px)" srcset="../raw/images/logo/logo-iconCat-tablet.svg" type="image/svg+xml">
+          <img class="header__logo-icon" src="../raw/images/logo/logo-iconCat-phone.svg" alt="Иконка логотипа Кат энержи" width="33" height="38">
+        </picture>
+
+        <picture>
+          <source media="(min-width:1200px)" srcset="../raw/images/logo/logo-textCat-desktop.svg" type="image/svg+xml">
+          <source media="(min-width:768px)" srcset="../raw/images/logo/logo-textCat-tablet.svg" type="image/svg+xml">
+          <img class="header__logo-text" src="../raw/images/logo/logo-textCat-phone.svg" alt="Текст логотипа Кат энержи" width="101" height="18">
+        </picture>
       </a>
       <nav class="header__navigation navigation">
 
@@ -112,7 +121,7 @@
 
       <section class="gps-map">
         <h2 class="gps-map__title visually-hidden title-stock">Наш магазин на карте</h2>
-        <img class="gps-map__image" src="#" alt="Карта" width="1400" height="400">
+        <img class="gps-map__image" src="#" alt="Карта" width="320" height="362">
         <div class="gps-map__container">
           <h3 class="gps-map__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
           <div class="gps-map__wrapper-description">
