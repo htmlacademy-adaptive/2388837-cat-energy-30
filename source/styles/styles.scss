@@ -1,12 +1,99 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/common.scss";
+@import "./global/mixins.scss.scss";
 @import "./global/fonts.scss";
 
 /* BLOCKS */
+@import "./blocks/page.scss";
+// header
 @import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/button-hambergers.scss";
+// main index
+@import "./blocks/functional-cat.scss";
+@import "./blocks/title.scss";
+@import "./blocks/format-text.scss";
+@import "./blocks/button-stock.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-product-title.scss";
+@import "./blocks/stock-description.scss";
+@import "./blocks/functional-product.scss";
+@import "./blocks/title-stock.scss";
+@import "./blocks/live-example.scss";
+@import "./blocks/gps-map.scss";
+@import "./blocks/work-section.scss";
+// footer
+@import "./blocks/footer.scss";
+@import "./blocks/box-social.scss";
+@import "./blocks/logo-academy.scss";
+//main-form
+@import "./blocks/main-form.scss";
+@import "./blocks/program.scss";
+@import "./blocks/form-page.scss";
+@import "./blocks/data.scss";
+@import "./blocks/legend-title.scss";
+@import "./blocks/lable-form.scss";
+@import "./blocks/input-text-form.scss";
+@import "./blocks/data-radio.scss";
+@import "./blocks/fieldset-textarea.scss";
+@import "./blocks/data-checkbox.scss";
+//main-catalog
+@import "./blocks/cards.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/order-souvenir.scss";
+@import "./blocks/work-section.scss";
 
-body{
-  $color:red;
-  background-color: $color;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
