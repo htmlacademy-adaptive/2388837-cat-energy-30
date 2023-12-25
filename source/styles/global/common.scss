@@ -2,21 +2,9 @@
 body{
   font-family: "Oswald";
   color: $majority-color; 
-  font-size: $main-size;
+  font-size: $majority-font-size;
   line-height: $majority-line-height;
   font-weight: $main-size;
   font-style: $majority-font-style;
   text-transform: $majority-text-transform;
-}
-h1,h2,h3,h4,h5,h6{
-  font-weight: inherit;
-}
-p,dl{
-  text-transform: none;
-}
-a{
-  text-decoration: none;
-}
-ul{
-  list-style: none;
 }

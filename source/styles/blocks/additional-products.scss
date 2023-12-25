@@ -1,0 +1,17 @@
+.additional-products__list{
+  list-style: none;
+}
+.additional-products__main-title{
+  @include font-size-and-line-height(24px,24px);
+  color: $additional-color;
+  text-align: center;
+}
+.additional-products__title{
+  @include font-size-and-line-height(16px,16px);
+    color: $few-black-color-two;
+  text-align: center;
+}
+.additional-products__description{
+  @include font-size-and-line-height(14px,14px);
+text-align: right;
+}

@@ -1,4 +1,6 @@
 .title{
   @include font-size-and-line-height(36px,36px);
   text-align: center;
+  font-weight: inherit;
+  text-transform: none;
 }

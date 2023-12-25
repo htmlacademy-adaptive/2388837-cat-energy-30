@@ -1,0 +1,5 @@
+.title-stock{
+  @include font-size-and-line-height(36px,36px);
+  color: $additional-color;
+  text-align: center;
+}

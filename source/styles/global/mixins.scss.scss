@@ -14,9 +14,10 @@
 }
 
 @mixin button() {
+  font-family: "Oswald";
   background-color: $bc-color-button;
   color: $few-white-color;
-  font-size: 16px;
   cursor: pointer;
   text-align: center;
+  border: none;
 }
