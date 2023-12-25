@@ -1,0 +1,10 @@
+.advantages__product-title{
+  color: $additional-color;
+  @include font-size-and-line-height(24px,37px);
+  font-weight: $main-size;
+}
+.advantages__catalog-link{
+  color: $additional-color;
+  @include font-size-and-line-height(16px,16px);
+  text-align: center;
+}

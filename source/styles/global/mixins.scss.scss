@@ -1,0 +1,22 @@
+@mixin font-face($font-family, $font-weight, $font-style, $src) {
+  @font-face {
+    font-family: $font-family;
+    src: $src;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+  }
+}
+
+@mixin font-size-and-line-height($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin button() {
+  background-color: $bc-color-button;
+  color: $few-white-color;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}

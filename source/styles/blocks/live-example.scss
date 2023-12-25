@@ -1,0 +1,16 @@
+.live-example__title{
+  @include font-size-and-line-height(24px,24px);
+  color: $additional-color;
+  text-align: center;
+}
+.live-example__item{
+  @include font-size-and-line-height(12px,100%);
+  font-family: "Lato";
+    text-align: center;
+}
+.live-example__price-title{
+  color: $additional-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}

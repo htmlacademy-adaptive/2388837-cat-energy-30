@@ -1,11 +1,16 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/common.scss";
 @import "./global/mixins.scss.scss";
 @import "./global/fonts.scss";
+@import "./global/common.scss";
 
 /* BLOCKS */
+@import "./blocks/stock-description.scss";
+@import "./blocks/button-stock.scss";
+@import "./blocks/title-stock.scss";
+@import "./blocks/title.scss";
 @import "./blocks/page.scss";
+@import "./blocks/title-index-lvl-two.scss";
 // header
 @import "./blocks/header.scss";
 @import "./blocks/logo.scss";
@@ -13,14 +18,8 @@
 @import "./blocks/button-hambergers.scss";
 // main index
 @import "./blocks/functional-cat.scss";
-@import "./blocks/title.scss";
-@import "./blocks/format-text.scss";
-@import "./blocks/button-stock.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/advantages-product-title.scss";
-@import "./blocks/stock-description.scss";
 @import "./blocks/functional-product.scss";
-@import "./blocks/title-stock.scss";
 @import "./blocks/live-example.scss";
 @import "./blocks/gps-map.scss";
 @import "./blocks/work-section.scss";

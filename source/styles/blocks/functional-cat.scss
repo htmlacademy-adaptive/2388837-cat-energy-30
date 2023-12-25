@@ -1,0 +1,8 @@
+.functional-cat__description-form-cat{
+  color: $few-white-color;
+  @include font-size-and-line-height(14px,14px);
+  text-transform: uppercase;
+}
+.cat__title--text-color-white{
+  color: $few-white-color;
+}
