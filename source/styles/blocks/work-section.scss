@@ -1,6 +1,7 @@
 .work-section__title{
-  @include font-size-and-line-height(16px,20px);
+  @include font-size-and-line-height(16px,inherit);
   color: $few-black-color;
+  font-weight: inherit;
   text-transform: uppercase;
 }
 .work-section__description{

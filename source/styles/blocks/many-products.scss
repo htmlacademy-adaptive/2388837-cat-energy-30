@@ -1,10 +1,11 @@
 .many-products__title{
-  font-size: 16px;
+  @include font-size-and-line-height(20px,24px);
   color: $few-black-color;
+  font-weight: inherit;
   text-align: center;
 }
 .many-products__description{
-  @include font-size-and-line-height(12px,16px);
+  @include font-size-and-line-height(inherit,18px);
   font-family: Lato;
   text-align: center;
 }

@@ -1,7 +1,7 @@
 .cards__list{
   list-style: none;
 }
-.cards-list__item-link{
+.cards__item-link{
   text-decoration: none;
 }
 .cards__title{
@@ -9,15 +9,4 @@
   color: $additional-color;
   font-weight: inherit;
   text-align: left;
-}
-.cards-list__title{
-  @include font-size-and-line-height(16px, 20px);
-color: $few-black-color-two;
-font-weight: inherit;
-text-align: center;
-}
-.cards-list__description-wrapper{
-  @include font-size-and-line-height(12px,16px);
-  font-family: Lato;
-  text-align: center;
 }

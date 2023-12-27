@@ -1,6 +1,5 @@
 .navigation__link{
-  font-family: "Lato";
+  @include font-size-and-line-height(20px, inherit);
   color: $additional-color;
-  font-size: 20px;
   text-decoration: none;
 }

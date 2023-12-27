@@ -8,8 +8,8 @@
   font-weight: $main-size;
 }
 .advantages__catalog-link{
+  @include font-size-and-line-height(inherit,16px);
   color: $additional-color;
-  line-height:16px;
   text-decoration: none;
   text-align: center;
 }

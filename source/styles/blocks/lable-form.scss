@@ -1,4 +1,4 @@
 .lable-form{
+  @include font-size-and-line-height(inherit,18px);
   color: $majority-color;
-  line-height: 18px;
 }
