@@ -1,6 +1,7 @@
 .title-stock{
-  @include font-size-and-line-height(36px,36px);
+  @include font-size-and-line-height(24px,24px);
   font-weight: inherit;
   color: $additional-color;
+  text-transform: none;
   text-align: center;
 }

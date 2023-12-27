@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 .cards__title{
-  @include font-size-and-line-height(36px,36px);
+  @include font-size-and-line-height(16px,inherit);
   color: $additional-color;
   font-weight: inherit;
   text-align: left;

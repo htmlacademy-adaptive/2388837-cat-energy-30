@@ -5,7 +5,7 @@
   text-align: center;
 }
 .additional-products__title{
-  @include font-size-and-line-height(20px,inherit);
+  @include font-size-and-line-height(inherit,16px);
   font-weight: inherit;
   color: $few-black-color-two;
   text-align: center;
