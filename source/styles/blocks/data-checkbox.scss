@@ -1,0 +1,4 @@
+.legend-title {
+  @include font-size-and-line-height(24px,26px);
+  color: $additional-color;
+}

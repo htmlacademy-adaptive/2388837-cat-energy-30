@@ -1,13 +1,14 @@
-.advantages__list{
+.advantages__list {
   list-style: none;
 }
-.advantages__product-title{
+
+.advantages__product-title {
   @include font-size-and-line-height(24px,37px);
   color: $additional-color;
   font-weight: inherit;
-  font-weight: $main-size;
 }
-.advantages__catalog-link{
+
+.advantages__catalog-link {
   @include font-size-and-line-height(inherit,16px);
   color: $additional-color;
   text-decoration: none;

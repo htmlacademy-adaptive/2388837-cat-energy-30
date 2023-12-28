@@ -1,6 +1,6 @@
-.stock-description{
+.stock-description {
   @include font-size-and-line-height(14px,18px);
-  color:$majority-color;
-  font-family: "Lato";
+  color: $majority-color;
+  font-family: "Lato", sans-serif;
   text-transform: none;
 }

@@ -1,10 +1,12 @@
-.additional-products__list{
+.additional-products__list {
   list-style: none;
 }
-.additional-products__main-title{
+
+.additional-products__main-title {
   text-align: center;
 }
-.additional-products__title{
+
+.additional-products__title {
   @include font-size-and-line-height(inherit,16px);
   font-weight: inherit;
   color: $few-black-color-two;

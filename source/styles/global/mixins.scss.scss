@@ -15,7 +15,7 @@
 
 @mixin button() {
   @include font-size-and-line-height(inherit, inherit);
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   background-color: $bc-color-button;
   color: $few-white-color;
   cursor: pointer;
