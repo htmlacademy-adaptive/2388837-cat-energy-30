@@ -1,0 +1,14 @@
+.functional-cat__description-form-cat {
+  @include font-size-and-line-height(14px,14px);
+  color: $few-white-color;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.functional-cat__link-program {
+  text-decoration: none;
+}
+
+.functional-cat__title--text-color-white {
+  color: $few-white-color;
+}

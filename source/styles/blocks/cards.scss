@@ -1,0 +1,14 @@
+.cards__list {
+  list-style: none;
+}
+
+.cards__item-link {
+  text-decoration: none;
+}
+
+.cards__title {
+  @include font-size-and-line-height(16px,inherit);
+  color: $additional-color;
+  font-weight: inherit;
+  text-align: left;
+}

@@ -1,0 +1,21 @@
+.many-products__title {
+  color: $few-black-color;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+}
+
+.many-products__description {
+  @include font-size-and-line-height(12px,16px);
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+}
+
+.many-products__button {
+  text-transform: inherit;
+}
+
+.many-products__button--bc-white {
+  color: $majority-color;
+  background-color: $bc-many-products-button;
+}

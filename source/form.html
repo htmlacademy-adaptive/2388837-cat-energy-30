@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -115,7 +116,7 @@
           <legend class="fieldset-textarea__legend-title legend-title">
             <label class="fieldset-textarea__title-label" for="comments">Комментарий</label>
           </legend>
-          <textarea class="fieldset-textarea__text" id="comments" name="Comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="fieldset-textarea__text input-text-form" id="comments" name="Comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form-page__fieldset-wrapper data-checkbox">
@@ -138,17 +139,23 @@
         </fieldset >
         <button class="form-page__button button-stock" type="submit">отправить заявку</button>
       </form>
-
-      <section class="gps-map">
-        <h2 class="gps-map__title visually-hidden title-stock">Наш магазин на карте</h2>
-        <img class="gps-map__image" src="#" alt="Карта" width="320" height="362">
-        <div class="gps-map__container">
-          <h3 class="gps-map__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-          <div class="gps-map__wrapper-description">
-            <p class="gps-map__description">ул. Большая<br>Конюшенная, д. 19/8</p>
-            <p class="gps-map__description">Санкт-Петербург</p>
-          </div>
+      <section class="work-section">
+        <h3 class="work-section__title">
+          приглашаем<br>
+          к сотрудничеству<br>
+          дилеров!
+        </h3>
+        <div class="work-section__wrapper-description">
+          <p class="work-section__description">
+            ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+          </p>
         </div>
+        </section>
+      <section class="gps-map">
+        <h2 class="visually-hidden">Наш магазин на карте</h2>
+        <img class="gps-map__image" src="#" alt="Карта" width="320" height="362">
       </section>
     </main>
 
@@ -210,13 +217,14 @@
             </a>
           </li>
         </ul>
-
         <div class="footer__box-logo-academy logo-academy">
-          <p class="logo-academy__text">HTML Academy</p>
+          <a class="logo-academy__link" href="https://htmlacademy.ru/">
+            <p class="logo-academy__text">HTML Academy</p>
           <img class="logo-academy__icon"
             src="images/logo/html-academy.svg"
             alt="Иконка логотипа HTML Academy"
             width="27" height="34">
+          </a>
         </div>
       </footer>
 </div>

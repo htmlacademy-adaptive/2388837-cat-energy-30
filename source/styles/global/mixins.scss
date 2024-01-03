@@ -1,0 +1,24 @@
+@mixin font-face($font-family, $font-weight, $font-style, $src) {
+  @font-face {
+    font-family: $font-family;
+    src: $src;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+  }
+}
+
+@mixin font-size-and-line-height($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin button() {
+  @include font-size-and-line-height(inherit, inherit);
+  font-family: "Oswald", sans-serif;
+  background-color: $bc-color-button;
+  color: $few-white-color;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}

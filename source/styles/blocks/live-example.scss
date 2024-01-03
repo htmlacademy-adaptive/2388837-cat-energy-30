@@ -1,0 +1,22 @@
+.live-example__list-wrapper {
+  text-transform: none;
+}
+
+.live-example__title {
+  @include font-size-and-line-height(24px,24px);
+  color: $additional-color;
+  text-align: center;
+}
+
+.live-example__item {
+  @include font-size-and-line-height(12px,100%);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.live-example__price-title {
+  @include font-size-and-line-height(14px,inherit);
+  color: $additional-color;
+  text-transform: uppercase;
+  text-align: center;
+}

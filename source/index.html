@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -62,9 +63,9 @@
         </nav>
       </header>
       <main class="main-index">
-        <section class="functional-cat">
-          <h1 class="functional-cat__title title">Функциональное<br> питание для котов</h1>
-          <p class="functional-cat__description-form-cat format-text">Занялся собой? Займись котом!</p>
+        <section class="main-index__functional-cat functional-cat">
+          <h1 class="functional-cat__title functional-cat__title--text-color-white title">Функциональное<br> питание для котов</h1>
+          <p class="functional-cat__description-form-cat">Занялся собой? Займись котом!</p>
           <a class="functional-cat__link-program button-stock" href="#">Подобрать программу</a>
           <picture>
             <source media="(min-width:1440px)"
@@ -92,7 +93,7 @@
             <h2 class="visually-hidden">Список преимуществ Cat Energy</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
-                <h3 class="advantages__product-title advantages-product-title">похудение</h3>
+                <h3 class="advantages__product-title">похудение</h3>
                 <p class="advantages__product-description stock-description">
                   Ваш кот весит больше собаки и почти утратил способность<br>
                   лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
@@ -101,7 +102,7 @@
                 <a class="advantages__catalog-link" href="#">каталог slim</a>
               </li>
               <li class="advantages__item">
-                <h3 class="advantages__product-title advantages-product-title">набор массы</h3>
+                <h3 class="advantages__product-title">набор массы</h3>
                 <p class="advantages__product-description stock-description">
                   Заработать авторитет среди дворовых котов и даже собак?<br>
                   Серия Cat Energy Pro поможет вашему коту нарастить<br>
@@ -113,7 +114,7 @@
           </div>
         </section>
         <section class="functional-product">
-          <h2 class="functional-product__title title-stock">Как это работает</h2>
+          <h2 class="title-index-lvl-two">Как это работает</h2>
           <ul class="functional-product__list">
             <li class="functional-product__item-card">
               <p class="functional-product__description functional-product__description--useful stock-description">
@@ -146,7 +147,7 @@
           </ul>
         </section>
         <section class="live-example">
-          <h2 class="live-example__title title-stock">Живой пример</h2>
+          <h2 class="title-index-lvl-two">Живой пример</h2>
           <div class="live-example__wrapper">
             <p class="live-example__description stock-description">
               Борис сбросил 5 кг за 2 месяца, просто замени в свой<br>
@@ -163,10 +164,7 @@
                 <dt class="live-example__title">60 ДНЕЙ</dt>
                 <dd class="live-example__item">затрачено времени</dd>
               </dl>
-              <dl class="live-example__list-wrapper-price">
-                <dt class="live-example__price-title format-text">Затраты на питание:</dt>
-                <dd><b class="live-example__price format-text">15 000 РУБ.</b></dd>
-              </dl>
+                <p class="live-example__price-title">Затраты на питание: <span><b>15 000 РУБ.</b></span></p>
             </div>
             <picture>
               <source media="(min-width:768px)"
@@ -177,6 +175,7 @@
                 width="560" height="512">
               <img class="live-example__cat-before"
                 src="images/index/live-example/cat-phone@1x.png"
+                srcset="images/index/live-example/cat-phone@2x.png 2x"
                 alt="Куки до применения Cat Energy"
                 width="280" height="256">
             </picture>
@@ -197,16 +196,16 @@
             <div class="work-section__wrapper-description">
               <p class="work-section__description">
                 ул. Большая<br>
-                Конюшенная, д. 19/8
+                Конюшенная, д. 19/8<br>
+                Санкт-Петербург
               </p>
-              <p class="work-section__description">Санкт-Петербург</p>
             </div>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <a class="logo" aria-label="Ссылка на логотип" href="index.html">
-          <img class="logo__image-text"
+        <a class="footer__logo" aria-label="Ссылка на логотип" href="index.html">
+          <img class="footer__logo"
             src="images/logo/logo-textCat-footer.svg"
             alt="текст cat energy"
             width="128" height="24">
@@ -260,11 +259,13 @@
           </li>
         </ul>
         <div class="footer__box-logo-academy logo-academy">
-          <p class="logo-academy__text">HTML Academy</p>
+          <a class="logo-academy__link" href="https://htmlacademy.ru/">
+            <p class="logo-academy__text">HTML Academy</p>
           <img class="logo-academy__icon"
             src="images/logo/html-academy.svg"
             alt="Иконка логотипа HTML Academy"
             width="27" height="34">
+          </a>
         </div>
       </footer>
     </div>

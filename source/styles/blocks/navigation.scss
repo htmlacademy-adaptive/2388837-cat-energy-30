@@ -1,0 +1,9 @@
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__link {
+  @include font-size-and-line-height(20px, inherit);
+  color: $additional-color;
+  text-decoration: none;
+}
