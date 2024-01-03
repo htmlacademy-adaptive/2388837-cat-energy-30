@@ -1,9 +1,9 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/mixins.scss.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/common.scss";
-
+@import "./global/visually-hidden.scss";
 /* BLOCKS */
 @import "./blocks/stock-description.scss";
 @import "./blocks/button-stock.scss";
@@ -17,6 +17,7 @@
 @import "./blocks/navigation.scss";
 @import "./blocks/button-hambergers.scss";
 // main index
+@import "./blocks/main-index.scss";
 @import "./blocks/functional-cat.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/functional-product.scss";
