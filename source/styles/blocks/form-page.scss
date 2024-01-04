@@ -1,1 +1,8 @@
-//form-page
+.form-page__wrapper-button::after {
+  @include font-size-and-line-height(14px, 16px);
+  font-family: "Lato", sans-serif;
+  color: $additional-color;
+  text-align: center;
+  text-transform: none;
+  content: "* — Обязательные поля";
+}

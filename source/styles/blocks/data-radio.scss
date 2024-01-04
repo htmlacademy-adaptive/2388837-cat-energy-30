@@ -1,1 +1,32 @@
-//data-radio
+.data-radio__title-lable {
+  cursor: pointer;
+}
+
+.data-radio__title-input[type="radio"] {
+  @include margin(0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 1px solid $bc-color-border-radio;
+  border-radius: 50%;
+}
+
+.data-radio__title-input[type="radio"]::before {
+  content: "";
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $bc-color-button;
+  border-radius: 50%;
+  display: none;
+}
+
+.data-radio__title-input[type="radio"]:checked::before {
+  display: block;
+}

@@ -1,3 +1,28 @@
 .functional-product__list {
+  @include indentation(0,0);
   list-style: none;
+}
+
+.functional-product__description--useful::before {
+  @include bc(url("../../images/icons/stack.svg#phone-green-box-leaf"), 60px 60px);
+  @include block(60px,60px);
+  content: "";
+}
+
+.functional-product__description--comfortable::before {
+  @include bc(url("../../images/icons/stack.svg#phone-green-box-powder"), 60px 60px);
+  @include block(60px,60px);
+  content: "";
+}
+
+.functional-product__description--eat::before{
+  @include bc(url("../../images/icons/stack.svg#phone-green-box-eat"), 60px 60px);
+  @include block(60px,60px);
+  content: "";
+}
+
+.functional-product__description--time::before{
+  @include bc(url("../../images/icons/stack.svg#phone-green-box-time"), 60px 60px);
+  @include block(60px,60px);
+  content: "";
 }

@@ -1,1 +1,18 @@
-// data-checkbox
+
+.data-checkbox__title-lable {
+  cursor: pointer;
+}
+
+.data-checkbox__title-input[type="checkbox"] {
+  @include margin(0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid $bc-color-border-radio;
+  width: 26px;
+  height: 26px;
+}
+
+.data-checkbox__title-input[type="checkbox"]:checked {
+  @include bc(url("../../images/icons/stack.svg#input-active"), 18px 14px);
+}
