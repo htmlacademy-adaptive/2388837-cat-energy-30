@@ -9,7 +9,7 @@
 }
 
 .order-souvenir__text::before {
-  @include bc(url("../../images/icons/stack.svg#phone-present"),78px 80px);
+  @include bc(url("../../images/icons/stack.svg#present_phone-present"),78px 80px);
   @include block(78px,80px);
   content: "";
 }

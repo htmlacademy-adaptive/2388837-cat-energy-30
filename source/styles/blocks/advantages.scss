@@ -10,13 +10,13 @@
 }
 
 .advantages__item:first-child .advantages__product-title::before {
-  @include bc(url("../../images/icons/stack.svg#phone-weight-loss"), 50px 53px);
+  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-loss"), 50px 53px);
   @include block(50px,53px);
   content: "";
 }
 
 .advantages__item:last-child .advantages__product-title::before {
-  @include bc(url("../../images/icons/stack.svg#phone-weight-gain"), 67px 50px);
+  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-gain"), 67px 50px);
   @include block(67px,50px);
   content: "";
 }
