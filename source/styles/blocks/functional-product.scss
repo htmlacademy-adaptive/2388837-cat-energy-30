@@ -15,13 +15,13 @@
   content: "";
 }
 
-.functional-product__description--eat::before{
+.functional-product__description--eat::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"), 60px 60px);
   @include block(60px,60px);
   content: "";
 }
 
-.functional-product__description--time::before{
+.functional-product__description--time::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"), 60px 60px);
   @include block(60px,60px);
   content: "";

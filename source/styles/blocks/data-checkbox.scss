@@ -5,8 +5,10 @@
 
 .data-checkbox__title-input[type="checkbox"] {
   @include margin(0);
+  /* stylelint-disable property-no-vendor-prefix */
   -webkit-appearance: none;
   -moz-appearance: none;
+  /* stylelint-enable property-no-vendor-prefix */
   appearance: none;
   border: 1px solid $bc-color-border-radio;
   width: 26px;
