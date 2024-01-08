@@ -7,3 +7,9 @@
   font-family: "Lato", sans-serif;
   text-transform: none;
 }
+
+.order-souvenir__text::before {
+  @include bc(url("../../images/icons/stack.svg#present_phone-present"),78px 80px);
+  @include block(78px,80px);
+  content: "";
+}

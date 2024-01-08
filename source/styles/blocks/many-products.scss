@@ -1,3 +1,13 @@
+.many-products__item-link {
+  text-decoration: none;
+}
+
+.many-products__item-link::before {
+  @include bc(url("../../images/icons/stack.svg#phone-plus"), 30px 30px);
+  @include block(30px,30px);
+  content: "";
+}
+
 .many-products__title {
   color: $few-black-color;
   font-size: inherit;

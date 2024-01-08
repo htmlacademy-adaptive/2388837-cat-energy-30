@@ -1,4 +1,5 @@
 .advantages__list {
+  @include indentation(0,0);
   list-style: none;
 }
 
@@ -6,6 +7,24 @@
   @include font-size-and-line-height(24px,37px);
   color: $additional-color;
   font-weight: inherit;
+}
+
+.advantages__item:first-child .advantages__product-title::before {
+  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-loss"), 50px 53px);
+  @include block(50px,53px);
+  content: "";
+}
+
+.advantages__item:last-child .advantages__product-title::before {
+  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-gain"), 67px 50px);
+  @include block(67px,50px);
+  content: "";
+}
+
+.advantages__catalog-link::after {
+  @include bc(url("../../images/icons/stack.svg#arrow-right"), 24px 12px);
+  @include block(24px,12px);
+  content: "";
 }
 
 .advantages__catalog-link {

@@ -22,3 +22,25 @@
   border: none;
   text-align: center;
 }
+
+@mixin bc($bi,$bs) {
+  background-image: $bi;
+  background-size: $bs;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin indentation($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin block($width,$height) {
+  display: block;
+  width: $width;
+  height: $height;
+}
+
+@mixin margin ($margin) {
+  margin: $margin;
+}
