@@ -1,4 +1,15 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   color: $majority-color;
