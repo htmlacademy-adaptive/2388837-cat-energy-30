@@ -19,24 +19,29 @@
   <body class="page__body">
     <div class="page">
       <header class="header">
-        <a class="header__logo-link logo" aria-label="Ссылка на главную" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-icon.svg" type="image/svg+xml"
-              width="70" height="59">
-            <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-icon.svg" type="image/svg+xml"
-              width="60" height="50">
-            <img class="header__logo-icon" src="images/icons/logo/phone-logo-icon.svg" alt="Иконка логотипа Сat Energy"
-              width="33" height="38">
-          </picture>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-text.svg" type="image/svg+xml"
-              width="118" height="21">
-            <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-text.svg" type="image/svg+xml"
-              width="101" height="18">
-            <img class="header__logo-text" src="images/icons/logo/phone-logo-text.svg" alt="Текст логотипа Сat Energy"
-              width="101" height="18">
-          </picture>
-        </a>
+        <div class="heder__global-wrapper">
+        <div class="heder__wrapper">
+          <a class="header__logo-link logo" aria-label="Ссылка на главную" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-icon.svg" type="image/svg+xml"
+                width="70" height="59">
+              <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-icon.svg" type="image/svg+xml"
+                width="60" height="50">
+              <img class="header__logo-icon" src="images/icons/logo/phone-logo-icon.svg" alt="Иконка логотипа Сat Energy"
+                width="33" height="38">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-text.svg" type="image/svg+xml"
+                width="118" height="21">
+              <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-text.svg" type="image/svg+xml"
+                width="101" height="18">
+              <img class="header__logo-text" src="images/icons/logo/phone-logo-text.svg" alt="Текст логотипа Сat Energy"
+                width="101" height="18">
+            </picture>
+          </a>
+          <button class="navigation__button button-hambergers" type="button"
+          aria-label="Пункта меню навигации"></button>
+        </div>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -49,9 +54,8 @@
               <a class="navigation__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-          <button class="navigation__button button-hambergers" type="button"
-            aria-label="Пункта меню навигации"></button>
         </nav>
+      </div>
       </header>
       <main class="main-index">
         <section class="main-index__functional-cat functional-cat">
@@ -98,7 +102,7 @@
           </div>
         </section>
         <section class="functional-product">
-          <h2 class="title-index-lvl-two">Как это работает</h2>
+          <h2 class="functional-product__title title-index-lvl-two">Как это работает</h2>
           <ul class="functional-product__list">
             <li class="functional-product__item-card">
               <p class="functional-product__description functional-product__description--useful stock-description">
@@ -131,7 +135,7 @@
           </ul>
         </section>
         <section class="live-example">
-          <h2 class="title-index-lvl-two">Живой пример</h2>
+          <h2 class="functional-product__title title-index-lvl-two">Живой пример</h2>
           <div class="live-example__wrapper">
             <p class="live-example__description stock-description">
               Борис сбросил 5 кг за 2 месяца, просто замени в свой<br>

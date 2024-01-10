@@ -5,8 +5,13 @@
 
 .advantages__product-title {
   @include font-size-and-line-height(24px,37px);
+  margin: 0;
   color: $additional-color;
   font-weight: inherit;
+}
+
+.advantages__product-description {
+  margin: 0;
 }
 
 .advantages__item:first-child .advantages__product-title::before {

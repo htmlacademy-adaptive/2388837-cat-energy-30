@@ -1,3 +1,15 @@
+.heder__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__logo-link {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+  align-items: center;
 }

@@ -1,12 +1,14 @@
 
 .work-section__title {
   @include font-size-and-line-height(20px,26px);
+  margin: 0;
   color: $few-black-color;
   font-weight: inherit;
 }
 
 .work-section__description {
   @include font-size-and-line-height(14px,inherit);
+  margin: 0;
   font-family: "Lato", sans-serif;
   text-transform: none;
 }
