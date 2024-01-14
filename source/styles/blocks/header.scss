@@ -1,15 +1,19 @@
 .header__wrapper {
-  padding: 13px 4px 11px 20px;
-  margin: 0 auto;
+  padding: 12px 0 0 21px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header__logo-link {
-  width: 190px;
   display: flex;
-  justify-content: space-between;
   text-decoration: none;
   align-items: center;
+}
+
+.header__logo-icon {
+  margin-right: 55px;
+}
+
+.header__logo-text {
+  margin-right: 65px;
 }
