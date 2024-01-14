@@ -19,38 +19,42 @@
 <body class="page__body">
   <div class="page">
     <header class="header">
-      <a class="header__logo-link logo" aria-label="Ссылка на главную" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-icon.svg" type="image/svg+xml"
-            width="70" height="59">
-          <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-icon.svg" type="image/svg+xml"
-            width="60" height="50">
-          <img class="header__logo-icon" src="images/icons/logo/phone-logo-icon.svg" alt="Иконка логотипа Сat Energy"
-            width="33" height="38">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-text.svg" type="image/svg+xml"
-            width="118" height="21">
-          <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-text.svg" type="image/svg+xml"
-            width="101" height="18">
-          <img class="header__logo-text" src="images/icons/logo/phone-logo-text.svg" alt="Текст логотипа Сat Energy"
-            width="101" height="18">
-        </picture>
-      </a>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-        <button class="navigation__button button-hambergers" type="button" aria-label="Пункта меню навигации"></button>
-      </nav>
+      <div class="header__global-wrapper">
+        <div class="header__wrapper">
+          <a class="header__logo-link logo" aria-label="Ссылка на главную" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-icon.svg" type="image/svg+xml"
+                width="70" height="59">
+              <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-icon.svg" type="image/svg+xml"
+                width="60" height="50">
+              <img class="header__logo-icon" src="images/icons/logo/phone-logo-icon.svg"
+                alt="Иконка логотипа Сat Energy" width="33" height="38">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-text.svg" type="image/svg+xml"
+                width="118" height="21">
+              <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-text.svg" type="image/svg+xml"
+                width="101" height="18">
+              <img class="header__logo-text" src="images/icons/logo/phone-logo-text.svg" alt="Текст логотипа Сat Energy"
+                width="101" height="18">
+            </picture>
+          </a>
+          <button class="button-hambergers" type="button" aria-label="Пункта меню навигации"></button>
+        </div>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-catalog">
       <section class="cards">
