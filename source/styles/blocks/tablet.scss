@@ -24,6 +24,20 @@
   .header__logo-text {
     margin-right: 0;
   }
+  .navigation__link--active {
+    position: relative;
+  }
+
+  .navigation__link--active::after {
+    content: "";
+    border-bottom: 2px solid $bc-color-button;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 2px;
+  }
+
   .button-hambergers {
     display: none;
   }
