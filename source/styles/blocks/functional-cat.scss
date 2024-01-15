@@ -1,9 +1,23 @@
-.functional-product__title {
-  margin: 0;
+.functional-cat {
+  width: 320px;
+  min-height: 480px;
+  background-image: url("../../images/backgraund/index-phone@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 302px;
+}
+.functional-cat__wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+  padding: 25px 0 166px 0;
+  margin-bottom: 136px;
+  position: relative;
+}
+
+.functional-cat__title {
+  margin: 0 0 26px 0;
 }
 
 .functional-cat__title--text-color-white {
-  margin: 0;
   color: $few-white-color;
 }
 
@@ -13,9 +27,22 @@
   color: $few-white-color;
   font-weight: inherit;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .functional-cat__link-program {
   text-decoration: none;
+  width: 280px;
+  height: 40px;
+  padding: 10px 44px;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
 }
 
+.functional-cat__product-image {
+  margin: 0 auto;
+  position: absolute;
+  top: 166px;
+  right: 20px;
+}
