@@ -1,24 +1,71 @@
 .advantages__list {
   @include indentation(0,0);
   list-style: none;
+  width: 280px;
+  margin: 0 auto;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__product-title {
   @include font-size-and-line-height(24px,37px);
+  margin: 0 0 23px 0;
   color: $additional-color;
   font-weight: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__product-description {
+  margin: 0;
+  width: 227px;
+}
+
+.advantages__product-description::after {
+  content: "";
+  border-bottom: 1px solid #d9d9d9;
+  width: 240px;
+  display: block;
+  padding: 0 0 23px 0;
+  margin: 0 0 19px 0;
+}
+
+.advantages__item:last-child .advantages__product-description {
+  padding: 0 0 0 7px;
+}
+
+.advantages__item {
+  width: 280px;
+  min-height: 266px;
+  background-color: $bc-many-products-button;
+  padding: 20px 0 0 19px;
 }
 
 .advantages__item:first-child .advantages__product-title::before {
   @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-loss"), 50px 53px);
   @include block(50px,53px);
+  margin-right: 21px;
   content: "";
 }
 
 .advantages__item:last-child .advantages__product-title::before {
   @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-gain"), 67px 50px);
   @include block(67px,50px);
+  margin-right: 11px;
   content: "";
+}
+
+.advantages__item:last-child {
+  padding: 24px 0 0 13px;
+}
+
+.advantages__catalog-link {
+  @include font-size-and-line-height(inherit,16px);
+  display: flex;
+  color: $additional-color;
+  text-decoration: none;
+  text-align: center;
 }
 
 .advantages__catalog-link::after {
@@ -27,9 +74,6 @@
   content: "";
 }
 
-.advantages__catalog-link {
-  @include font-size-and-line-height(inherit,16px);
-  color: $additional-color;
-  text-decoration: none;
-  text-align: center;
+.advantages__catalog-link:last-child {
+  padding: 0 0 0 7px;
 }

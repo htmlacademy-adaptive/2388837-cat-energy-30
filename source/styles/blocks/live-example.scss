@@ -8,14 +8,20 @@
   text-align: center;
 }
 
+.live-example__description {
+  margin: 0;
+}
+
 .live-example__item {
   @include font-size-and-line-height(12px,100%);
+  margin: 0;
   font-family: "Lato", sans-serif;
   text-align: center;
 }
 
 .live-example__price-title {
   @include font-size-and-line-height(14px,inherit);
+  margin: 0;
   color: $additional-color;
   text-transform: uppercase;
   text-align: center;
