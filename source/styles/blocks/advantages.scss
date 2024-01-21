@@ -1,8 +1,11 @@
+.advantages {
+  padding: 0 20px 0 20px;
+}
+
 .advantages__list {
   @include indentation(0,0);
   list-style: none;
   width: 280px;
-  margin: 0 auto;
   row-gap: 20px;
   display: flex;
   flex-direction: column;
@@ -39,7 +42,7 @@
   width: 280px;
   min-height: 266px;
   background-color: $bc-many-products-button;
-  padding: 20px 0 0 19px;
+  padding: 20px 33px 18px 19px;
 }
 
 .advantages__item:first-child .advantages__product-title::before {

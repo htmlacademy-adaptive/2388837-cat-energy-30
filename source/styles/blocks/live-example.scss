@@ -1,5 +1,19 @@
+.live-example {
+  background: #eaeaea;
+  padding: 0 20px 0 20px;
+}
+
+.live-example__title-section {
+  margin: 0 0 38px 0;
+}
+
 .live-example__list-wrapper {
+  margin: 0 0 0 0;
   text-transform: none;
+}
+
+.live-example__list-wrapper:first-child {
+  margin: 0 61px 0 0;
 }
 
 .live-example__title {
@@ -9,7 +23,14 @@
 }
 
 .live-example__description {
-  margin: 0;
+  margin: 0 0 34px 0;
+}
+
+.live-example__container-definitions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 40px 0;
+  padding: 0 10px 0 20px;
 }
 
 .live-example__item {
@@ -21,7 +42,8 @@
 
 .live-example__price-title {
   @include font-size-and-line-height(14px,inherit);
-  margin: 0;
+  margin: 0 0 20px 0;
+  padding: 0 3px 0 0;
   color: $additional-color;
   text-transform: uppercase;
   text-align: center;
@@ -29,4 +51,5 @@
 
 .live-example__cat-before {
   display: block;
+  margin: 0 auto;
 }

@@ -1,10 +1,33 @@
+.functional-product {
+  margin: 0 0 72px 0;
+  padding: 20px 0 0 20px;
+}
+
+.functional-product__title {
+  margin: 0 0 22px 0;
+}
+
 .functional-product__list {
   @include indentation(0,0);
+  padding: 20px 0 0 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 21px;
+}
+
+.functional-product__item-card {
+  display: flex;
 }
 
 .functional-product__description {
   margin: 0;
+  display: flex;
+}
+
+.functional-product__description::before {
+  margin-right: 21px;
 }
 
 .functional-product__description--useful::before {
