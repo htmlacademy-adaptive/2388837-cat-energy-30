@@ -13,10 +13,6 @@
   margin: 0;
 }
 
-.live-example__list-wrapper:first-child {
-  margin: 0 61px 0 0;
-}
-
 .live-example__title {
   @include font-size-and-line-height(24px,24px);
   color: $additional-color;
