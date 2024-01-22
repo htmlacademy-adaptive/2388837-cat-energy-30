@@ -8,8 +8,13 @@
 }
 
 .live-example__list-wrapper {
+  margin: 0 0 0 0;
   text-transform: none;
   margin: 0;
+}
+
+.live-example__list-wrapper:first-child {
+  margin: 0 61px 0 0;
 }
 
 .live-example__title {
@@ -46,4 +51,5 @@
 
 .live-example__cat-before {
   display: block;
+  margin: 0 auto;
 }
