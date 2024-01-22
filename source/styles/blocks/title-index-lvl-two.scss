@@ -1,7 +1,7 @@
 .title-index-lvl-two {
   @include font-size-and-line-height(36px,40px);
+  margin: 0;
   color: $additional-color;
   font-weight: inherit;
-  text-align: center;
-  text-transform: none;
+    text-transform: none;
 }

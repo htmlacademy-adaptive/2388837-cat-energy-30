@@ -1,3 +1,34 @@
+.footer {
+  background: $bc-many-products-button;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo-link {
+  padding: 41px 0 0 0;
+  display: block;
+}
+
+.footer__logo-link::after {
+  content: "";
+  width: 280px;
+  margin: 0 auto 20px;
+  padding-top: 18px;
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__social-list-wrapper::after {
+  content: "";
+  width: 280px;
+  margin: 0 auto 20px;
+  padding-top: 18px;
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .footer__logo {
+  display: block;
+  margin: 0 auto;
   text-decoration: none;
 }

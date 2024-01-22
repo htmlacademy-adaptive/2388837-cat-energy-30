@@ -4,6 +4,9 @@
 }
 
 .logo-academy__text {
+  @include font-size-and-line-height(16px,20px);
   margin: 0;
+  padding: 6px 0 0 19px;
   font-family: "Lato", sans-serif;
+  text-transform: none;
 }

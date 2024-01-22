@@ -1,15 +1,32 @@
+.live-example {
+  padding: 25px 19px 39px 21px;
+  background-color: #eaeaea;
+}
+
+.live-example__section-title {
+  margin-bottom: 41px;
+}
+
 .live-example__list-wrapper {
   text-transform: none;
+  margin: 0;
 }
 
 .live-example__title {
   @include font-size-and-line-height(24px,24px);
   color: $additional-color;
-  text-align: center;
 }
 
 .live-example__description {
-  margin: 0;
+  margin: 0 0 34px 0;
+}
+
+.live-example__container-definitions {
+  padding: 0 0 0 43px;
+  margin-bottom: 28px ;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 78px
 }
 
 .live-example__item {
@@ -21,10 +38,10 @@
 
 .live-example__price-title {
   @include font-size-and-line-height(14px,inherit);
-  margin: 0;
+  margin: 0 auto 20px;
+  width: 188px;
   color: $additional-color;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .live-example__cat-before {

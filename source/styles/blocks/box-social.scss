@@ -1,5 +1,10 @@
 .box-social {
   list-style: none;
+  margin: 0;
+  padding: 0 0 0 95px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .box-social__link {
