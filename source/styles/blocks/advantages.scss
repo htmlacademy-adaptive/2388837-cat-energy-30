@@ -1,7 +1,16 @@
 .advantages {
   padding: 0 20px 0 20px;
+    @media (min-width: $tablet-width) {
+      padding: 0 30px 0 30px;
+      margin-bottom: 82px;
+  }
 }
 
+.advantages__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
 .advantages__list {
   @include indentation(0,0);
   list-style: none;
@@ -9,6 +18,52 @@
   row-gap: 20px;
   display: flex;
   flex-direction: column;
+    @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantages__item {
+  width: 280px;
+  min-height: 266px;
+  background-color: $bc-many-products-button;
+  padding: 20px 33px 18px 19px;
+  @media (min-width: $tablet-width) {
+  width: 100%;
+  min-height: 266px;
+  background-color: $bc-many-products-button;
+  padding: 77px 0 54px 53px;
+  }
+}
+
+
+
+
+.advantages__item:first-child .advantages__product-title::before {
+  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-loss"), 50px 53px);
+  @include block(50px,53px);
+  content: "";
+  margin-right: 21px;
+    @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__item:last-child .advantages__product-title::before {
+  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-gain"), 67px 50px);
+  @include block(67px,50px);
+  content: "";
+  margin-right: 11px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__item:last-child {
+  padding: 24px 0 0 13px;
+    @media (min-width: $tablet-width) {
+    padding: 89px 0 0 52px;
+  }
 }
 
 .advantages__product-title {
@@ -18,11 +73,18 @@
   font-weight: inherit;
   display: flex;
   align-items: center;
+  @media (min-width: $tablet-width) {
+      @include font-size-and-line-height(36px,36px);
+  }
 }
 
 .advantages__product-description {
   margin: 0;
   width: 227px;
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 53px;
+  } 
 }
 
 .advantages__product-description::after {
@@ -32,35 +94,16 @@
   display: block;
   padding: 0 0 23px 0;
   margin: 0 0 19px 0;
+  @media (min-width: $tablet-width) {
+  content: none;
+  } 
 }
 
 .advantages__item:last-child .advantages__product-description {
   padding: 0 0 0 7px;
-}
-
-.advantages__item {
-  width: 280px;
-  min-height: 266px;
-  background-color: $bc-many-products-button;
-  padding: 20px 33px 18px 19px;
-}
-
-.advantages__item:first-child .advantages__product-title::before {
-  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-loss"), 50px 53px);
-  @include block(50px,53px);
-  margin-right: 21px;
-  content: "";
-}
-
-.advantages__item:last-child .advantages__product-title::before {
-  @include bc(url("../../images/icons/stack.svg#circle-cat-icon_phone-weight-gain"), 67px 50px);
-  @include block(67px,50px);
-  margin-right: 11px;
-  content: "";
-}
-
-.advantages__item:last-child {
-  padding: 24px 0 0 13px;
+    @media (min-width: $tablet-width) {
+    padding: 0 0 0 0;
+  } 
 }
 
 .advantages__catalog-link {
@@ -69,6 +112,9 @@
   color: $additional-color;
   text-decoration: none;
   text-align: center;
+    @media (min-width: $tablet-width) {
+      @include font-size-and-line-height(20px,normal);
+  }
 }
 
 .advantages__catalog-link::after {
@@ -79,4 +125,7 @@
 
 .advantages__catalog-link:last-child {
   padding: 0 0 0 7px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

@@ -1,10 +1,17 @@
 .live-example {
   padding: 25px 19px 39px 21px;
   background-color: #eaeaea;
+  @media (min-width: $tablet-width) {
+    padding: 55px 19px 39px 31px;
+    background-color: inherit;
+  }
 }
 
 .live-example__section-title {
   margin-bottom: 41px;
+    @media (min-width: $tablet-width) {
+  margin-bottom: 57px;
+  }
 }
 
 .live-example__list-wrapper {

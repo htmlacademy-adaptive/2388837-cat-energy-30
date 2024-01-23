@@ -1,3 +1,6 @@
 .button-stock {
   @include button;
+  @media (min-width: $tablet-width) {
+    @include font-size-and-line-height(20px,26px);
+    }
 }

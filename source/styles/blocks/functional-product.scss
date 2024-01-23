@@ -1,10 +1,17 @@
 .functional-product {
   margin-bottom: 48px;
   padding: 20px 29px 0 21px;
+    @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 20px 29px 0 30px;
+  }
 }
 
 .functional-product__title {
   margin-bottom: 21px;
+      @media (min-width: $tablet-width) {
+  margin-bottom: 70px;
+  }
 }
 
 .functional-product__list {
@@ -15,11 +22,27 @@
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 20px;
+    @media (min-width: $tablet-width) {
+    padding: 0;
+    flex-direction: row;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+}
+
+.functional-product__item-card {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    height: 280px;
+  }
 }
 
 .functional-product__description {
   margin: 0;
   display: flex;
+    @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .functional-product__description::before {
@@ -30,22 +53,42 @@
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 60px 60px);
   @include block(60px,60px);
   content: "";
+  @media (min-width: $tablet-width) {
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 80px 80px);
+    @include block(80px,80px);
+    margin-bottom: 31px;
+  }
 }
 
 .functional-product__description--comfortable::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-powder"), 60px 60px);
   @include block(60px,60px);
   content: "";
+    @media (min-width: $tablet-width) {
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-powder"), 80px 80px);
+    @include block(80px,80px);
+    margin-bottom: 31px;
+  }
 }
 
 .functional-product__description--eat::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"), 60px 60px);
   @include block(60px,60px);
   content: "";
+    @media (min-width: $tablet-width) {
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"), 80px 80px);
+    @include block(80px,80px);
+    margin-bottom: 31px;
+  }
 }
 
 .functional-product__description--time::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"), 60px 60px);
   @include block(60px,60px);
   content: "";
+  @media (min-width: $tablet-width) {
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"), 80px 80px);
+    @include block(80px,80px);
+    margin-bottom: 31px;
+  }
 }
