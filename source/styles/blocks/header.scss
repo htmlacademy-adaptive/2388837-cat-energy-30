@@ -1,163 +1,73 @@
 .header {
   margin: 0 0 12px 0;
-  // адаптив tablet
   @media (min-width: $tablet-width) {
-      margin: 0;
-      padding: 25px 33px 0 30px;
-
-    .header__global-wrapper {
-      display: flex;
-    }
-
-    .header__wrapper {
-      padding: 0;
-      margin: 0 93px 0 0;
-    }
-
-    .header__logo-link {
-      display: flex;
-    }
-
-    .header__logo-icon {
-      margin-right: 12px;
-    }
-
-    .header__logo-text {
-      margin-right: 0;
-    }
-
-    .navigation__link--active {
-      position: relative;
-    }
-
-    .navigation__link--active::after {
-      content: "";
-      border-bottom: 2px solid $bc-color-button;
-      width: 100%;
-      display: block;
-      position: absolute;
-      top: 33px;
-      left: 2px;
-    }
-
-    .button-hambergers {
-      display: none;
-    }
-
-    .navigation {
-      display: block;
-    }
-
-    .navigation__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-top: 13px;
-      column-gap: 35px;
-      row-gap: 10px;
-    }
-
-    .navigation__item {
-      padding: 0;
-      border: none;
-    }
-
-    .navigation__item:first-child {
-      padding: 0;
-    }
-
-    .navigation__link {
-      @include font-size-and-line-height(18px, 24px);
-    }
+    margin: 0;
+    padding: 25px 33px 0 30px;
   }
-  // адаптив для пк
+
   @media (min-width: $desktop-width) {
-  .header {
-    padding: 55px 0 0 110px;
-  }
-
-  .header__global-wrapper {
-    display: flex;
-  }
-
-  .header__wrapper {
-    padding: 0;
-    margin: 0 542px 0 0;
-  }
-
-  .header__logo-link {
-    display: flex;
-  }
-
-  .header__logo-icon {
-    margin-right: 13px;
-  }
-
-  .header__logo-text {
-    margin-right: 0;
-  }
-
-  .navigation__link {
-    @include font-size-and-line-height(20px, normal);
-    color: $few-white-color;
-  }
-
-  .navigation__link--active {
-    position: relative;
-  }
-
-  .navigation__link--active::after {
-    content: "";
-    border-bottom: 2px solid $few-white-color;
-    width: 95%;
-    display: block;
-    position: absolute;
-    top: 35px;
-  }
-
-  .button-hambergers {
-    display: none;
-  }
-
-  .navigation {
-    display: block;
-  }
-
-  .navigation__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 17px;
-    gap: 33px;
-  }
-
-  .navigation__item {
-    padding: 0;
-    border: none;
-  }
-
-  .navigation__item:first-child {
     padding: 0;
   }
 }
+
+.header__global-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .header__wrapper {
   padding: 12px 0 0 21px;
   display: flex;
   align-items: center;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 93px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    padding: 54px 407px 0 112px;
+    background-color: $few-white-color;
+  }
 }
 
 .header__logo-link {
   display: flex;
   text-decoration: none;
   align-items: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .header__logo-icon {
   margin-right: 55px;
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 13px;
+  }
 }
 
 .header__logo-text {
   margin-right: 65px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }

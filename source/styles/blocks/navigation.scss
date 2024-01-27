@@ -1,17 +1,86 @@
 .navigation {
   display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 100%; 
+  }
 }
 
 .navigation__list {
-  @include indentation(0,0);
+  @include indentation(0, 0);
   flex-direction: column;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 65px 0px 18px 95px;
+    column-gap: 35px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 72px 0 18px 133px;
+    gap: 32px;
+    background-color: $bc-color-button;
+  }
 }
 
 .navigation__link {
   @include font-size-and-line-height(20px, inherit);
   color: $additional-color;
   text-decoration: none;
+  @media (min-width: $tablet-width) {
+    @include font-size-and-line-height(18px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-and-line-height(20px, normal);
+    color: $few-white-color;
+  }
+}
+
+.navigation__link--catalog {
+margin-right: 3px;
+}
+
+.navigation__link--active {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.navigation__link--active::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    border-bottom: 2px solid $bc-color-button;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    border-bottom: 2px solid $few-white-color;
+    width: 95%;
+    display: block;
+    position: absolute;
+    top: 34px;
+  }
 }
 
 .navigation__item {
@@ -19,8 +88,20 @@
   text-align: center;
   padding: 22px 56px 21px;
   border-top: 1px solid $border-color;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+
 }
 
 .navigation__item:first-child {
   padding: 35px 56px 21px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

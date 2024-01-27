@@ -6,4 +6,12 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+  display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+  display: none;
+  }
 }

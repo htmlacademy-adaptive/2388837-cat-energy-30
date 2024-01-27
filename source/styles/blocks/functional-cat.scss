@@ -5,11 +5,24 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 320px 302px;
-    @media (min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: auto;
     padding: 62px 0 0 119px;
     min-height: 874px;
-    background-image:none;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 0;
+    padding: 105px 0 185px 191px;
+    background: linear-gradient(
+      to right,
+      transparent 0,
+      transparent 720px,
+      $bc-color-button 540px,
+      $bc-color-button 1440px
+    );
   }
 }
 
@@ -19,41 +32,60 @@
   margin-bottom: 136px;
   position: relative;
   @media (min-width: $tablet-width) {
-  background-color: inherit;
-  padding: 0;
-  margin-bottom: 52px;
-  position: static;
+    background-color: inherit;
+    padding: 0;
+    margin-bottom: 52px;
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1248px;
   }
 }
 
 .functional-cat__title {
   margin: 0 0 26px 0;
   @media (min-width: $tablet-width) {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-and-line-height(60px, 60px);
+    width: 416px;
+    margin-bottom: 41px;
   }
 }
 
 .functional-cat__title--text-color-white {
   color: $few-white-color;
   @media (min-width: $tablet-width) {
-  color: $additional-color;
+    color: $additional-color;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
 
 .functional-cat__description-form-cat {
-  @include font-size-and-line-height(14px,14px);
+  @include font-size-and-line-height(14px, 14px);
   margin: 0;
   color: $few-white-color;
   font-weight: inherit;
   text-transform: uppercase;
   text-align: center;
   @media (min-width: $tablet-width) {
-  @include font-size-and-line-height(20px,20px);
-  margin: 0;
-  color: $additional-color;
-  font-weight: inherit;
-  text-transform: uppercase;
-  text-align: left;
+    @include font-size-and-line-height(20px, 20px);
+    margin: 0;
+    color: $additional-color;
+    font-weight: inherit;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-and-line-height(20px, 20px);
+    width: 283px;
   }
 }
 
@@ -64,7 +96,7 @@
   padding: 10px 44px;
   display: block;
   margin: 0 auto;
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     text-decoration: none;
     width: 244px;
     height: 52px;
@@ -74,7 +106,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .functional-cat__product-image {
@@ -82,8 +117,9 @@
   position: absolute;
   top: 166px;
   right: 20px;
-    @media (min-width: $tablet-width) {
-    top: 340px;
-    right: 29px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    left: 366px;
+    top: -80px;
+  }
 }
