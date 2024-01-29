@@ -1,23 +1,41 @@
 .live-example {
   padding: 25px 19px 39px 21px;
   background-color: #eaeaea;
+
   @media (min-width: $tablet-width) {
     padding: 55px 19px 39px 31px;
     background-color: inherit;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
+
 
 .live-example__section-title {
   margin-bottom: 41px;
-    @media (min-width: $tablet-width) {
-  margin-bottom: 57px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding: 31px 0 0 112px;
+  }
+}
+
+.live-example__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 0 0;
+    background-color: $bc-many-products-button;
   }
 }
 
 .live-example__list-wrapper {
-  margin: 0 0 0 0;
-  text-transform: none;
   margin: 0;
+  text-transform: none;
 }
 
 .live-example__title {
@@ -27,6 +45,11 @@
 
 .live-example__description {
   margin: 0 0 34px 0;
+
+  @media (min-width: $desktop-width) {
+    width: 562px;
+    padding: 0 0 0 119px;
+  }
 }
 
 .live-example__container-definitions {

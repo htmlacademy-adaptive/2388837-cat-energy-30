@@ -1,16 +1,26 @@
 .functional-product {
   margin-bottom: 48px;
   padding: 20px 29px 0 21px;
-    @media (min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 20px 29px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 29px 0 109px;
   }
 }
 
 .functional-product__title {
   margin-bottom: 21px;
-      @media (min-width: $tablet-width) {
-  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
   }
 }
 
@@ -22,11 +32,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 20px;
-    @media (min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     padding: 0;
     flex-direction: row;
     column-gap: 153px;
     row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 95px;
   }
 }
 
@@ -35,28 +50,63 @@
     width: 230px;
     height: 280px;
   }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .functional-product__description {
   margin: 0;
   display: flex;
-    @media (min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    min-height: 280px;
   }
 }
 
 .functional-product__description::before {
   margin-right: 18px;
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.functional-product__description--useful {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/icons/stack.svg#one-functional-product__description");
+    background-size: 73px 226px;
+    background-position: 125px 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .functional-product__description--useful::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 60px 60px);
   @include block(60px,60px);
   content: "";
+
   @media (min-width: $tablet-width) {
     @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 80px 80px);
     @include block(80px,80px);
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.functional-product__description--comfortable {
+  @media (min-width: $desktop-width) {
+    width: 246px;
+    background-image: url("../../images/icons/stack.svg#two-functional-product__description");
+    background-size: 114px 280px;
+    background-position: 120px -28px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -64,10 +114,24 @@
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-powder"), 60px 60px);
   @include block(60px,60px);
   content: "";
-    @media (min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-powder"), 80px 80px);
     @include block(80px,80px);
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.functional-product__description--eat {
+  @media (min-width: $desktop-width) {
+    width: 248px;
+    background-image: url("../../images/icons/stack.svg#three-functional-product__description");
+    background-size: 110px 271px;
+    background-position: 123px -19px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -75,10 +139,25 @@
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"), 60px 60px);
   @include block(60px,60px);
   content: "";
-    @media (min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"), 80px 80px);
     @include block(80px,80px);
     margin-bottom: 31px;
+  }
+
+
+}
+
+.functional-product__description--time {
+  @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
+      width: 248px;
+      background-image: url("../../images/icons/stack.svg#four-functional-product__description");
+      background-size: 121px 266px;
+      background-position: 125px -20px;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -86,9 +165,13 @@
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"), 60px 60px);
   @include block(60px,60px);
   content: "";
+
   @media (min-width: $tablet-width) {
     @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"), 80px 80px);
     @include block(80px,80px);
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }
