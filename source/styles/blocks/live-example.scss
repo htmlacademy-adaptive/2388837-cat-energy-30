@@ -1,26 +1,165 @@
+.live-example {
+  padding: 25px 19px 39px 21px;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 19px 39px 31px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.live-example__section-title {
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding: 31px 0 0 112px;
+  }
+}
+
+.live-example__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 72px 0;
+    background-color: $bc-many-products-button;
+    position: relative;
+  }
+}
+
 .live-example__list-wrapper {
+  margin: 0;
   text-transform: none;
 }
 
+.live-example__list-wrapper--sixty {
+  @media (min-width: $tablet-width) {
+margin-right: 100px;
+  }
+}
 .live-example__title {
-  @include font-size-and-line-height(24px,24px);
+  @include font-size-and-line-height(24px, 24px);
   color: $additional-color;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-and-line-height(30px, 37px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-and-line-height(30px, 37px);
+  }
+}
+
+.live-example__description {
+  margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 706px;
+    margin: 0 0 72px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 85px;
+    padding: 3px 0 0 111px;
+  }
+}
+.live-example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+.live-example__container-definitions {
+  padding: 0 0 0 43px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 78px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 56px;
+    column-gap: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+    padding: 0 0 0 168px;
+  }
 }
 
 .live-example__item {
-  @include font-size-and-line-height(12px,100%);
+  @include font-size-and-line-height(12px, 100%);
+  margin: 0;
   font-family: "Lato", sans-serif;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-and-line-height(14px, 14px);
+  }
+  @media (min-width: $desktop-width) {
+    @include font-size-and-line-height(14px, 14px);
+  }
 }
 
 .live-example__price-title {
-  @include font-size-and-line-height(14px,inherit);
+  @include font-size-and-line-height(14px, inherit);
+  margin: 0 auto 20px;
+  width: 188px;
   color: $additional-color;
   text-transform: uppercase;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-and-line-height(20px, 20px);
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size-and-line-height(20px, 20px);
+    margin: 0;
+    padding-left: 111px;
+    width: 446px;
+  }
+}
+
+.live-example__price-title span {
+  @media (min-width: $desktop-width) {
+    padding-left: 65px;
+  }
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+  }
 }
 
 .live-example__cat-before {
   display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 80px;
+    left: -6px;
+  }
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -135px;
+    right: 112px;
+  }
+}
+
+.live-example__cat-before::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url(../../images/icons/stack.svg#slider_desktop-slider);
+    background-repeat: no-repeat;
+    background-size: 4px 512px;
+    @include block(4px, 512px);
+    position: absolute;
+  }
 }

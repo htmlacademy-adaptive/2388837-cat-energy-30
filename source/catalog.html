@@ -13,43 +13,48 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" type=image/svg+xml>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <div class="page">
     <header class="header">
-      <a class="header__logo-link logo" aria-label="Ссылка на главную" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-icon.svg" type="image/svg+xml"
-            width="70" height="59">
-          <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-icon.svg" type="image/svg+xml"
-            width="60" height="50">
-          <img class="header__logo-icon" src="images/icons/logo/phone-logo-icon.svg" alt="Иконка логотипа Сat Energy"
-            width="33" height="38">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-text.svg" type="image/svg+xml"
-            width="118" height="21">
-          <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-text.svg" type="image/svg+xml"
-            width="101" height="18">
-          <img class="header__logo-text" src="images/icons/logo/phone-logo-text.svg" alt="Текст логотипа Сat Energy"
-            width="101" height="18">
-        </picture>
-      </a>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-        <button class="navigation__button button-hambergers" type="button" aria-label="Пункта меню навигации"></button>
-      </nav>
+      <div class="header__global-wrapper">
+        <div class="header__wrapper">
+          <a class="header__logo-link logo" aria-label="Ссылка на главную" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-icon.svg" type="image/svg+xml"
+                width="70" height="59">
+              <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-icon.svg" type="image/svg+xml"
+                width="60" height="50">
+              <img class="header__logo-icon" src="images/icons/logo/phone-logo-icon.svg"
+                alt="Иконка логотипа Сat Energy" width="33" height="38">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/icons/logo/desktop-logo-text.svg" type="image/svg+xml"
+                width="118" height="21">
+              <source media="(min-width: 768px)" srcset="images/icons/logo/tablet-logo-text.svg" type="image/svg+xml"
+                width="101" height="18">
+              <img class="header__logo-text" src="images/icons/logo/phone-logo-text.svg" alt="Текст логотипа Сat Energy"
+                width="101" height="18">
+            </picture>
+          </a>
+          <button class="button-hambergers" type="button" aria-label="Пункта меню навигации"></button>
+        </div>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-catalog">
       <section class="cards">
@@ -358,8 +363,11 @@
       <div class="footer__box-logo-academy logo-academy">
         <a class="logo-academy__link" href="https://htmlacademy.ru/">
           <p class="logo-academy__text">HTML Academy</p>
-          <img class="logo-academy__icon" src="images/icons/logo/logo-academy.svg" alt="Логотип HTML Academy" width="27"
-            height="34">
+          <svg viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg" width="27" height="35">
+            <path
+              d="m13.64.52-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z"
+              fill="curentColor" />
+          </svg>
         </a>
       </div>
     </footer>

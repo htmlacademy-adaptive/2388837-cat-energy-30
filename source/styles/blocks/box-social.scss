@@ -1,7 +1,17 @@
 .box-social {
   list-style: none;
+  margin: 0;
+  padding: 0 0 0 95px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 0 0;
+  }
 }
 
 .box-social__link {
   text-decoration: none;
+  width: 133px;
 }
