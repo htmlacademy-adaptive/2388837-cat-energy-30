@@ -55,6 +55,21 @@
   }
 }
 
+.functional-product__item-card--useful {
+  @media (min-width: $tablet-width) {
+      background-image: url("../../images/icons/stack.svg#one-functional-product__description");
+      background-size: 73px 226px;
+      background-position: 125px 0;
+      background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/icons/stack.svg#one-functional-product__description");
+    background-size: 73px 226px;
+    background-position: 125px 0;
+    background-repeat: no-repeat;
+  }
+}
 .functional-product__description {
   margin: 0;
   display: flex;
@@ -76,14 +91,6 @@
   }
 }
 
-.functional-product__description--useful {
-  @media (min-width: $desktop-width) {
-    background-image: url("../../images/icons/stack.svg#one-functional-product__description");
-    background-size: 73px 226px;
-    background-position: 125px 0;
-    background-repeat: no-repeat;
-  }
-}
 
 .functional-product__description--useful::before {
   @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 60px 60px);
@@ -91,12 +98,17 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 80px 80px);
-    @include block(80px,80px);
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-leaf"), 65px 80px);
+    width: 80px;
+    height: 80px;
+    background-color:#68b738;
+    background-position: 6px 3px;
     margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
+    background-size: 58px 80px;
+    background-color: #68b738;
   }
 }
 
@@ -116,16 +128,23 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-powder"), 80px 80px);
-    @include block(80px,80px);
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-powder"),  65px 80px);
+    width: 80px;
+    height: 80px;
+    background-color:#68b738;
     margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
+    background-size: 58px 80px;
+    background-color: #68b738;
   }
 }
 
 .functional-product__description--eat {
+  @media (min-width: $tablet-width) {
+    width: 207px;
+  }
   @media (min-width: $desktop-width) {
     width: 248px;
     background-image: url("../../images/icons/stack.svg#three-functional-product__description");
@@ -141,16 +160,23 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"), 80px 80px);
-    @include block(80px,80px);
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-eat"),  65px 80px);
+    width: 80px;
+    height: 80px;
+    background-color:#68b738;
     margin-bottom: 31px;
   }
 
-
+  @media (min-width: $desktop-width) {
+    background-size: 58px 80px;
+    background-color: #68b738;
+  }
 }
 
 .functional-product__description--time {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 242px;
+  }
     @media (min-width: $desktop-width) {
       width: 248px;
       background-image: url("../../images/icons/stack.svg#four-functional-product__description");
@@ -158,7 +184,6 @@
       background-position: 125px -20px;
       background-repeat: no-repeat;
     }
-  }
 }
 
 .functional-product__description--time::before {
@@ -167,11 +192,21 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"), 80px 80px);
-    @include block(80px,80px);
+    @include bc(url("../../images/icons/stack.svg#green-box_phone-green-box-time"),  65px 80px);
+    width: 80px;
+    height: 80px;
+    background-color:#68b738;
     margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
+    background-size: 58px 80px;
+    background-color: #68b738;
+  }
+}
+
+.functional-product__description span {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

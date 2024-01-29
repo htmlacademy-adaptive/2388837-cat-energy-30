@@ -2,11 +2,13 @@
   display: none;
   @media (min-width: $tablet-width) {
     display: block;
+    padding-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     width: 100%; 
+    padding: 0;
   }
 }
 
@@ -19,8 +21,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 65px 0px 18px 95px;
-    column-gap: 35px;
+    padding: 0;
+    column-gap: 33px;
     row-gap: 10px;
   }
 

@@ -2,11 +2,21 @@
   background: $bc-many-products-button;
   display: flex;
   flex-direction: column;
+  
+@media (min-width: $desktop-width) {
+  padding: 70px 0 67px 108px;
+  flex-direction: row;
+}
 }
 
 .footer__logo-link {
   padding: 41px 0 0 0;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+    padding: 0;
+  }
 }
 
 .footer__logo-link::after {
@@ -16,6 +26,17 @@
   padding-top: 18px;
   display: block;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $desktop-width) {
+    content: none;
+}
+}
+
+.footer__social-list-wrapper {
+  @media (min-width: $desktop-width) {
+    content: none;
+    margin-right: 379px;
+  }
 }
 
 .footer__social-list-wrapper::after {
@@ -25,10 +46,18 @@
   padding-top: 18px;
   display: block;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
 }
 
 .footer__logo {
   display: block;
   margin: 0 auto;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

@@ -47,6 +47,7 @@
 .functional-cat__title {
   margin: 0 0 26px 0;
   @media (min-width: $tablet-width) {
+    width: 416px;
     margin-bottom: 40px;
   }
 
@@ -119,7 +120,14 @@
   right: 20px;
   @media (min-width: $tablet-width) {
     margin: 0;
+    z-index: -1;
+    left: 31px;
+    top: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    top: -84px;
     left: 366px;
-    top: -80px;
   }
 }

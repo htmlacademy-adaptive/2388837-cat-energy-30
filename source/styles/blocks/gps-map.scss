@@ -1,4 +1,27 @@
+.gps-map {
+    @media (min-width: $desktop-width) {
+        padding: 94px 0 103px 111px;
+        background-image: url("../../images/backgraund/map-desktop@1x.png"), url("../../images/backgraund/map-desktop@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+}
+}
+
 .gps-map__container-bc-map {
     width: 320px;
     height: 387px;
+
+@media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+}
+}
+
+.gps-map__image-icon {
+    @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 133px;
+    right: 420px;
+    }
 }
